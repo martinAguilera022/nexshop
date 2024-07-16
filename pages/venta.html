@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexShop Venta</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-row">
+            <a href="../index.html">
+                <h2>NexShop</h2>
+            </a>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <nav>
+                <a class="icons" href="./carrito.html"><img src="../icons/online-store-cart.png" alt="Carrito"></a>
+                <a class="icons" href="#"><img src="../icons/break-bell.png" alt="notificaciones"></a>
+                <a class="icons" href="perfil.html"><img src="../icons/profile-user.png" alt="Perfil"></a>
+            </nav>
+        </div>
+        <nav class="cat">
+            <ul>
+                <li class="Categoria"><a href="./hogarMuebles.html">Categorias</a></li>
+                <li class="Categoria"><a href=#>Ofertas</a></li>
+                <li class="Categoria"><a href="./venta.html">Venta</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="ventaSeccion">
+            <div class="tituloVenta">
+                <h2>Venta</h2>
+            </div>
+            <form>
+                
+                    <label for="nombreProducto">Nombre del producto:</label>
+                    <input type="text" id="nombreProducto" name="nombreProducto" required><br>
+                    <label for="caracteristicas">Caracteristicas:</label>
+                    <input type="text" id="caracteristicas" name="caracteristicas" required><br>
+                    <label for="caracteristicas">Descripcion:</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required>
+                    <button class="btonAzul">Subir Imagenes</button>
+                    <div>
+                        <button class="btonAzul" type="submit">Publicar</button>
+                    </div>
+
+
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

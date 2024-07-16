@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: #002366;
+    height: 3.125rem;
+}
+
+header {
+    background-color: #002366;
+    color: white;
+}
+
+.nav-row {
+    padding: 0.625rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Asegura que todos los elementos estén alineados verticalmente */
+}
+
+.buscador {
+    flex-grow: 1;
+    /* Permite que el buscador crezca y ocupe el espacio disponible */
+    max-width: 62.5rem;
+    margin: 0 1.25rem;
+    /* Añade margen para separar el buscador de los elementos adyacentes */
+}
+
+.buscador input {
+    width: 100%;
+    /* Hace que el input ocupe todo el ancho disponible dentro del contenedor .buscador */
+    padding: 0.3125rem;
+}
+
+nav {
+    gap: 1.25rem;
+    /* Asegura que los enlaces estén alineados verticalmente */
+}
+
+nav a {
+    color: white;
+    margin: 0.3125rem;
+}
+
+.cat ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cat ul li {
+    margin: .3125rem;
+}
+
+.cat ul li a {
+    padding: 0.5rem 0.75rem;
+    color: rgb(255, 255, 255);
+
+    font-weight: 600;
+}
+
+.cat ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.272);
+}
+
+header h2 {
+    margin: 0;
+}
+
+header>nav {
+    padding-bottom: 0.625rem;
+    margin-top: 0.125rem;
+    gap: 1.25rem;
+}
+
+.section {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    align-items: center;
+
+    align-self: center;
+
+
+
+
+
+
+}
+
+.section .item {
+
+    height: 12.5rem;
+    text-align: center;
+    align-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+
+
+.item {
+    background-color: rgb(211, 214, 215);
+    padding: 0.625rem;
+    margin: 1.875rem;
+
+
+
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.item:hover {
+    background-color: #6d6d6d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#mas-populares {
+    background-color: #002366;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 100%;
+    align-items: normal;
+}
+
+.titulo-populares {
+    color: #ffffff;
+}
+
+.popular {
+    background-color: #002366;
+    width: 100%;
+    height: 100%;
+}
+
+.botonesArticulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.masMenos {
+    background-color: #002366;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.masMenos:hover {
+    background-color: #0055ff;
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+.eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.eliminar:hover {
+    background-color: #ff3333;
+    transform: scale(1.1);
+}
+
+.titulo-populares {
+    margin-bottom: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 0.625rem;
+}
+
+.ofertas {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ofertas button {
+    align-self: center;
+}
+
+
+
+.ofertasArticulo {
+    padding: 0.625rem;
+    margin: 0.625rem;
+}
+
+.ofertasImg {
+    margin-right: 0.9375rem;
+}
+
+.ofertasTexto {
+    margin-right: auto;
+}
+
+.ofertasArticulo p {
+    margin: 0;
+    margin-top: 0.625rem;
+}
+
+.botonCarrito {
+    background-color: black;
+}
+
+
+
+.icons img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 1.875rem;
+    padding-top: 0.625rem;
+}
+
+.slogan {
+    background-image: url(../img/rectangle3.png);
+    background-size: cover;
+    height: auto;
+    padding: 1.25rem;
+    font-size: 3.75rem;
+
+
+    height: 31.25rem;
+
+    padding: 3.125rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.articulo img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.3125rem;
+}
+
+.articulo {
+    background-color: #8d8d8d;
+    text-align: center;
+
+
+
+
+
+    box-shadow: 1px 1px .625rem #000;
+}
+
+
+.articulo:hover {
+    background-color: #6d6d6d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1.25rem #000;
+}
+
+.articulo button {
+    margin: 0.625rem;
+}
+
+.articulos p {
+    margin: 0.625rem;
+}
+
+
+.infoArt {
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.carrito {
+
+    margin: 1.25rem;
+    background-color: #D9D9D9;
+    border-radius: 2.875rem;
+
+
+}
+
+.carrito .imgComprado {
+    height: 12.5rem;
+    width: 15.625rem;
+}
+
+
+
+
+.totalCarrito {
+
+
+    align-items: center;
+    border-left: .0625rem solid black;
+
+
+}
+
+.precioArt {
+    font-size: 4.375rem;
+    font-weight: 200;
+
+}
+
+.todosLosMovimientos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25rem;
+
+
+}
+
+
+
+
+
+.metodosPago {
+    height: max-content;
+    width: max-content;
+
+}
+
+button {
+    font-weight: bold;
+
+}
+
+.eliminar {
+    background-color: #ffffff;
+    color: #002366;
+    margin: 0.3125rem;
+
+}
+
+.masMenos {
+    background-color: #ffffff;
+    color: #002366;
+}
+
+
+
+.tituloCat {
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    height: 31.25rem;
+    font-size: 3.125rem;
+}
+
+.hogarMueblesTitulo {
+    background-image: url(../img/hogar.png);
+}
+
+.division {
+    background-color: #002366;
+    height: 1.25rem;
+}
+
+.ventaSeccion {
+    height: 100%;
+    margin: 2.5rem;
+    background-color: #002366;
+    border-radius: 2.875rem;
+
+}
+
+.ventaSeccion form {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 2.875rem;
+    border-bottom-right-radius: 2.875rem;
+
+
+}
+
+button {
+    margin: 0.3125rem;
+
+    padding: .625rem 1.25rem;
+    font-family: 'Inter', sans-serif;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/*
+.btonAzul {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btonAzul:hover {
+    background-color: #0055ff;
+    transform: scale(1.1);
+}
+*/
+.btonNegro {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0.3125rem;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.btonNegro:hover {
+    background-color: #ffffff;
+    color: #002366;
+
+
+
+}
+
+.btonAzul {
+    background-color: #002366;
+    color: #ffffff;
+    margin: 0.3125rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btonBlanco {
+    background-color: #ffffff;
+    color: #002366;
+    margin: 0.3125rem;
+}
+
+.tituloVenta {
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.tituloArticulo {
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+
+
+
+
+.podriaInteresarte {
+    background-color: #002366;
+    color: #ffffff;
+}
+
+.hogarMueble {
+    background-image: url(../img/hogar.png);
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+}
+
+.electronica {
+    background-image: url(../img/Electronica.png);
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+}
+
+.moda {
+    background-image: url(../img/Moda.png);
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+}
+
+.bellezaSalud {
+    background-image: url(../img/BellezaSalud.png);
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+
+
+#comentariosSection {
+    margin: 1.25rem;
+    color: black;
+    border-radius: 2.875rem;
+    background-color: #D9D9D9;
+    padding: 1.25rem;
+}
+
+.comentarioUsuario img {
+    height: 1.25rem;
+}
+
+.fondoBlanco {
+    background-color: #ffffff;
+}
+
+
+.articulos {
+    display: flex;
+    flex-direction: row;
+
+
+
+    gap: 1.25rem;
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+.flechasArt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flechas img {
+    background-color: #ffffff00;
+    width: 3.125rem;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.flechas {
+    background-color: #002366;
+}
+
+.infoArticulo {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contenidoArt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .625rem;
+
+}
+
+.articulosGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 11.875rem);
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+
+
+
+}
+
+.articuloEnCarrito {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 50px);
+
+    grid-column: 1/2;
+    margin-bottom: .625rem;
+    gap: .625rem;
+    width: 100%;
+
+
+
+}
+
+.articuloEnCarrito .botonesArticulo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 5;
+
+
+}
+
+.articuloEnCarrito .tituloArticulo {
+    grid-column: 3/7;
+    grid-row: 1/1;
+}
+
+.articuloEnCarrito .valoracion {
+    grid-column: 3/5;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    align-content: end;
+
+}
+
+.todoElCarrito {
+    margin: 1.25rem;
+}
+
+.articuloEnCarrito .valoracion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.articuloEnCarrito .precioArt {
+    grid-row: 3/3;
+    grid-column: 3/6;
+    align-content: end;
+}
+
+.articuloEnCarrito .cuotas {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    align-content: end;
+
+
+}
+
+.articuloEnCarrito .imgComprado {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-column: 1/3;
+    grid-row: 1/5;
+
+
+}
+
+.carrito {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+    gap: .625rem;
+
+}
+
+.totalCarrito {
+    display: flex;
+    flex-direction: column;
+    border-left: .0625rem solid black;
+    grid-column: 2/3;
+    gap: 1.25rem;
+
+
+}
+
+.articulo2 {
+    border-top: .0625rem solid black;
+    border-bottom: .0625rem solid black;
+    padding: .3125rem;
+}
+
+.perfil {
+    background-color: #d4d3d3;
+    border-radius: 2.875rem;
+    margin: auto;
+    padding: 5rem;
+    text-align: center;
+    grid-column: 2/8;
+    grid-row: 1/8;
+    justify-content: end;
+
+}
+
+.perfil img {
+    width: 5rem;
+    height: auto;
+}
+
+.perfilVentana {
+    display: grid;
+    grid-template-columns: repeat(7, 9.375rem);
+    grid-template-rows: repeat(9, 3.75rem);
+}
+
+.menuLateral {
+    background-color: #ffffff;
+    grid-column: 1/3;
+    grid-row: 1/10;
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #002366;
+    box-shadow: 2px 0rem 1.25rem 2px;
+}
+
+.menuLateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: left;
+
+
+}
+
+.menuLateral ul i {
+    margin: .9375rem;
+}
+
+.menuLateral ul li {
+    border-bottom: solid .0313rem black;
+    margin-left: 3.125rem;
+    list-style: none;
+}
+
+.infoArticulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 6.25rem);
+
+
+}
+
+.infoArticulo .articuloImg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    grid-row: 1/5;
+
+
+}
+
+.infoArticulo #valoracion img {
+    width: 1.25rem;
+
+}
+
+.todoElArticulo {
+    margin: 1.25rem;
+    background-color: #d4d3d3;
+    border-radius: 2.875rem;
+    padding: 1.25rem;
+}
+
+.infoArticulo .contenidoArt {
+    grid-row: 1/5;
+}
+
+.contenidoArt .valoracion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contenidoArt .valoracion {
+    display: flex;
+    flex-direction: row;
+    width: 5%;
+    align-content: end;
+    margin-top: .625rem;
+
+}
+
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    border-top: 1px solid black;
+    padding-top: 3%;
+
+}
+
+.caracteristicas .infoCaract {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    width: 40%;
+    margin-top: 3%;
+
+
+}
+
+.todoElArticulo section {
+    margin-top: 2%;
+
+}
+
+.todoElArticulo .descripcion p {
+    text-align: start;
+    margin: 1.25rem;
+}
+
+.todoElArticulo .descripcion {
+    text-align: center;
+    border-top: .0625rem solid black;
+}
+
+.popular {
+    background-color: #002366;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.popular .titulo-populares {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.popular .articulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular .articulosInteresantes {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.popular .articulosInteresantes img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.popular .articulosInteresantes p {
+    margin: 5px 0;
+}
+
+.popular .flechas {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+
+
+}
+
+.popular .flechas img {
+    width: 20px;
+    height: auto;
+}
+
+.popular .flechas:hover {
+    background-color: #ddd;
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comentarioUsuario {
+    display: grid;
+    grid-template-columns: repeat(7, 12.5rem);
+    grid-template-rows: repeat(2, 60px);
+    border-top: .0625rem solid black;
+}
+
+.comentarioUsuario p {
+    grid-column: 1/7;
+}
+
+.comentarioUsuario .usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+.estrellasValoracion p {
+    font-size: 3.125rem;
+    margin: .3125rem;
+
+}
+
+.estrellasValoracion {
+    display: flex;
+    flex-direction: row;
+    grid-column: 7/8;
+    grid-row: 1/3;
+    justify-self: center;
+    height: 40%;
+    align-self: center;
+    align-items: center;
+
+}
+
+.estrellasValoracion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.usuario h5 {
+    font-size: large;
+
+    margin-left: .3125rem;
+
+
+
+}
+
+.usuario {
+    align-items: end;
+    margin: .3125rem;
+
+
+
+}
+
+@media (max-width: 1200px) {}
