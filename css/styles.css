@@ -19,7 +19,19 @@ footer {
 header {
     background-color: #002366;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra debajo del nav */
 }
+
+main {
+    margin-top: 7%;
+    /* ajusta esto según sea necesario */
+}
+
 
 .nav-row {
     padding: 0.625rem 1.25rem;
@@ -27,7 +39,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* Asegura que todos los elementos estén alineados verticalmente */
 }
 
 .buscador {
@@ -47,6 +58,7 @@ header {
 nav {
     gap: 1.25rem;
     /* Asegura que los enlaces estén alineados verticalmente */
+
 }
 
 nav a {
@@ -98,6 +110,7 @@ header>nav {
     align-items: center;
 
     align-self: center;
+
 
 
 
@@ -204,9 +217,10 @@ header>nav {
 }
 
 .ofertas {
-    padding: 2.5rem;
+
     display: flex;
     flex-direction: column;
+
 
 }
 
@@ -216,10 +230,7 @@ header>nav {
 
 
 
-.ofertasArticulo {
-    padding: 0.625rem;
-    margin: 0.625rem;
-}
+
 
 .ofertasImg {
     margin-right: 0.9375rem;
@@ -231,7 +242,7 @@ header>nav {
 
 .ofertasArticulo p {
     margin: 0;
-    margin-top: 0.625rem;
+
 }
 
 .botonCarrito {
@@ -262,6 +273,7 @@ h3 {
     font-size: 3.75rem;
 
 
+
     height: 31.25rem;
 
     padding: 3.125rem;
@@ -281,11 +293,6 @@ a {
 .articulo {
     background-color: #8d8d8d;
     text-align: center;
-
-
-
-
-
     box-shadow: 1px 1px .625rem #000;
 }
 
@@ -298,7 +305,8 @@ a {
 }
 
 .articulo button {
-    margin: 0.625rem;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .articulos p {
@@ -405,10 +413,11 @@ button {
 }
 
 .ventaSeccion {
-    height: 100%;
-    margin: 2.5rem;
+    height: 150%;
+    margin: 10%;
     background-color: #002366;
     border-radius: 2.875rem;
+
 
 }
 
@@ -421,12 +430,13 @@ button {
     border-bottom-right-radius: 2.875rem;
 
 
+
 }
 
 button {
-    margin: 0.3125rem;
 
-    padding: .625rem 1.25rem;
+
+    padding: 1% 1%;
     font-family: 'Inter', sans-serif;
     border-style: none;
     font-size: medium;
@@ -434,6 +444,15 @@ button {
     background-color: #000;
     color: #fff;
 
+}
+
+.articulos button {
+    padding: 3% 6%;
+}
+
+.articulosGrid button {
+    padding: 3% 6%;
+    margin: 5%;
 }
 
 button:hover {
@@ -499,10 +518,7 @@ button:hover {
 }
 
 
-.articulosMostrados{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-}
+
 
 
 
@@ -561,19 +577,7 @@ button:hover {
 }
 
 
-.articulos {
-    display: flex;
-    flex-direction: row;
 
-
-
-    gap: 1.25rem;
-
-    height: 100%;
-    width: 100%;
-
-
-}
 
 
 .flechasArt {
@@ -611,11 +615,26 @@ button:hover {
 
 .articulosGrid {
     display: grid;
-    grid-template-columns: repeat(5, 11.875rem);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+    gap: 2%;
+    margin: 12%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
 
+.articulos {
+    margin: 4%;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+
+
+    gap: 2%;
+
+    height: 100%;
+    width: 100%;
 
 
 }
@@ -722,20 +741,21 @@ button:hover {
     margin: auto;
     padding: 5rem;
     text-align: center;
-    grid-column: 2/8;
-    grid-row: 1/8;
+    grid-column: 3/8;
+    grid-row: 1/9;
     justify-content: end;
+    margin: 10%;
 
 }
 
 .perfil img {
-    width: 5rem;
+    width: 20%;
     height: auto;
 }
 
 .perfilVentana {
     display: grid;
-    grid-template-columns: repeat(7, 9.375rem);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 3.75rem);
 }
 
@@ -744,6 +764,7 @@ button:hover {
     grid-column: 1/3;
     grid-row: 1/10;
     gap: 1.25rem;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -905,15 +926,13 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+   
 
 
 }
 
 .popular .flechas img {
-    width: 20px;
-    height: auto;
+   
 }
 
 .popular .flechas:hover {
@@ -928,7 +947,7 @@ button:hover {
 
 .comentarioUsuario {
     display: grid;
-    grid-template-columns: repeat(7, 12.5rem);
+    grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(2, 60px);
     border-top: .0625rem solid black;
 }
@@ -983,3 +1002,68 @@ button:hover {
 
 }
 
+
+
+
+
+.footer {
+    color: #f8f9fa;
+    background-color: #002366;
+    margin-top: 2%;
+
+}
+
+.footerContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: #002366;
+}
+
+.footerSection {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.footerTitle {
+    font-size: 16px;
+}
+
+.footerList {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLink {
+    text-decoration: none;
+
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.footerBottom {
+    text-align: center;
+
+
+
+}
+
+.footerBottom p {
+    font-size: 14px;
+    background-color: #002366;
+
+}
