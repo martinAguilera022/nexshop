@@ -28,7 +28,7 @@ header {
 }
 
 main {
-    margin-top: 7%;
+    margin-top: 6%;
     /* ajusta esto según sea necesario */
 }
 
@@ -110,11 +110,6 @@ header>nav {
     align-items: center;
 
     align-self: center;
-
-
-
-
-
 
 
 }
@@ -461,21 +456,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/*
-.btonAzul {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-.btonAzul:hover {
-    background-color: #0055ff;
-    transform: scale(1.1);
-}
-*/
 .btonNegro {
     background-color: #000000;
     color: #ffffff;
@@ -723,15 +704,12 @@ button:hover {
     border-left: .0625rem solid black;
     grid-column: 2/3;
     gap: 1.25rem;
+    margin-bottom: 5px;
 
 
 }
 
-.articulo2 {
-    border-top: .0625rem solid black;
-    border-bottom: .0625rem solid black;
-    padding: .3125rem;
-}
+
 
 .perfil {
     background-color: #d4d3d3;
@@ -1114,6 +1092,11 @@ button:hover {
 
     }
 
+    .tituloCat h2 {
+        font-size: 3.125rem;
+        width: 100%;
+    }
+
     .articuloEnCarrito {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -1123,6 +1106,7 @@ button:hover {
 
         width: 100%;
         gap: 1%;
+        border-bottom: .0313rem solid black;
     }
 
     .precioArt {
@@ -1203,7 +1187,18 @@ button:hover {
         text-align: center;
         align-content: center;
         font-size: 30px;
-        font-weight: 900;
+        font-weight: 800;
+    }
+
+    .item {
+        background-color: rgb(211, 214, 215);
+        padding: 0.625rem;
+        margin: 5%;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    main {
+        margin-top: 100px;
     }
 
     .section {
@@ -1233,8 +1228,42 @@ button:hover {
 
 }
 
-.masMenosMovil {
-    display: none;
+@media (max-width: 707px) {
+    .articuloEnCarrito {
+        display: grid;
+
+        grid-column: 1 / 2;
+
+    }
+
+
+    .carrito .tituloArticulo {
+        font-size: 8px;
+    }
+
+    .articuloEnCarrito .precioArt {
+        grid-row: 2 /3;
+        grid-column: 3 / 6;
+        font-size: 20px;
+        align-self: end;
+    }
+
+
+
+}
+
+@media (max-width:673px) {
+    .articuloEnCarrito .botonesArticulo button {
+        height: auto;
+        width: auto;
+        font-size: 9px;
+        text-align: center;
+
+
+
+
+    }
+
 }
 
 /* Móviles (pantallas de 480px o menos) */
@@ -1243,6 +1272,25 @@ button:hover {
         font-size: 12px;
     }
 
+    .tituloCat h2 {
+        font-size: 2.5rem;
+        width: 100%;
+
+        height: 50px;
+        text-align: center;
+        align-content: center;
+
+
+
+    }
+
+    .section {
+        margin-top: 1px;
+    }
+
+    .tituloCat {
+        height: 250px;
+    }
 
     .menu-icon {
         width: 30px;
@@ -1389,9 +1437,7 @@ button:hover {
 
     }
 
-    .section {
-        margin-top: 100px;
-    }
+
 
     .flechasArt .flechas {
         display: none;
@@ -1542,6 +1588,10 @@ button:hover {
     .totalCarritoMovil {
         display: none;
     }
+
+    .masMenosMovil {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1600,20 +1650,22 @@ button:hover {
         font-size: 20px;
         align-self: center;
     }
+
+    .totalCarrito h3 {
+        font-size: 1.25rem;
+    }
+
+
+
+    .articuloEnCarrito .tituloArticulo {
+        grid-column: 3 / 6;
+        grid-row: 1 / 5;
+        font-size: 7px;
+
+    }
 }
 
-.totalCarrito h3 {
-    font-size: 1.25rem;
-}
 
-
-
-.articuloEnCarrito .tituloArticulo {
-    grid-column: 3 / 6;
-    grid-row: 1 / 5;
-    font-size: 7px;
-
-}
 
 
 @media (max-width:375px) {
