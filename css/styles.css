@@ -1492,8 +1492,13 @@ button:hover {
         padding-bottom: 1%;
 
     }
-    .articuloEnCarrito{
-        border-bottom:  1px solid black ;
+
+    .carrito {
+        height: 50rem;
+    }
+
+    .articuloEnCarrito {
+        border-bottom: 1px solid black;
     }
 
     .totalCarritoMovil {
