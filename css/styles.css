@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 body {
-    font-family: 'Inter', sans-serif;
     background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif !important;
 }
 
 footer {
@@ -27,11 +32,28 @@ header {
     /* Sombra debajo del nav */
 }
 
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.img-populares {
+    width: 100%;
+}
+
 main {
     margin-top: 6%;
     /* ajusta esto según sea necesario */
 }
 
+
+.btn {
+    padding: 0;
+}
 
 .nav-row {
     padding: 0.625rem 1.25rem;
@@ -55,15 +77,23 @@ main {
     padding: 0.3125rem;
 }
 
+.infoNotificacion {
+    padding-left: 20px;
+}
+
 nav {
     gap: 1.25rem;
     /* Asegura que los enlaces estén alineados verticalmente */
 
 }
 
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+
 nav a {
-    color: white;
-    margin: 0.3125rem;
+    color: #002366;
+
 }
 
 .cat ul {
@@ -634,15 +664,16 @@ button:hover {
 
 .articuloEnCarrito .botonesArticulo {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 8;
     grid-row: 5;
 
 
 }
 
 .articuloEnCarrito .tituloArticulo {
-    grid-column: 3/7;
+    grid-column: 3/8;
     grid-row: 1/1;
+    font-size: medium;
 }
 
 .articuloEnCarrito .valoracion {
@@ -652,7 +683,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     width: 15%;
-    align-content: end;
+    align-self: center;
 
 }
 
@@ -661,19 +692,27 @@ button:hover {
 }
 
 .articuloEnCarrito .valoracion img {
-    width: 100%;
+    width: 70%;
     height: 100%;
     object-fit: contain;
 }
 
 .articuloEnCarrito .precioArt {
-    grid-row: 3/3;
-    grid-column: 3/6;
-    align-content: end;
+    grid-row: 3/4;
+    grid-column: 3/5;
+    align-self: start;
+
+    font-size: 3.125rem;
+}
+
+.articuloEnCarrito p {
+    font-size: 20px;
+    margin-bottom: 0;
+
 }
 
 .articuloEnCarrito .cuotas {
-    grid-column: 3/5;
+    grid-column: 3/8;
     grid-row: 4/5;
     align-content: end;
 
@@ -1061,7 +1100,7 @@ button:hover {
 }
 
 
-@media (min-width: 480px) {
+@media (min-width: 506px) {
 
     .articulosGrid .articulo .btonCarrito {
         display: none;
@@ -1080,23 +1119,39 @@ button:hover {
     }
 
     .articulosGrid {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-content: center;
-        gap: 2%;
-        margin: 7%;
         margin-top: 2%;
-        margin-bottom: 8%;
+        margin: 10%;
+        gap: 1%;
+
+        margin-top: 2%;
+
+
+    }
+
+    .articulo .articuloP p {
+        font-size: 15px;
+        margin-bottom: 1%;
+
+    }
+
+    .articulo button {
+        font-size: small;
     }
 
 }
 
 
 /* Tablets (pantallas de 768px o menos) */
-@media (max-width: 768px) {
+@media (max-width: 846px) {
     body {
         font-size: 14px;
 
+    }
+
+    .articuloEnCarrito p {
+        font-size: 8px;
+
+        margin-bottom: .0625rem;
     }
 
     .tituloCat h2 {
@@ -1166,7 +1221,7 @@ button:hover {
         grid-column-end: 7;
         grid-row: 5;
 
-        justify-content: space-between;
+
         align-content: center;
 
 
@@ -1177,6 +1232,7 @@ button:hover {
         width: auto;
         font-size: 11px;
         text-align: start;
+
 
 
 
@@ -1243,16 +1299,25 @@ button:hover {
 
     }
 
+    .articuloEnCarrito .valoracion {
+        align-self: start;
+        grid-row: 2/3;
+    }
+
 
     .carrito .tituloArticulo {
         font-size: 8px;
     }
 
     .articuloEnCarrito .precioArt {
-        grid-row: 2 /3;
+        grid-row: 2/4;
         grid-column: 3 / 6;
-        font-size: 20px;
+        font-size: 30px;
         align-self: end;
+    }
+
+    .articuloEnCarrito .botonesArticulo {
+        gap: 1%;
     }
 
 
@@ -1274,7 +1339,7 @@ button:hover {
 }
 
 /* Móviles (pantallas de 480px o menos) */
-@media (max-width: 480px) {
+@media (max-width: 506px) {
     body {
         font-size: 12px;
     }
@@ -1301,15 +1366,15 @@ button:hover {
 
     .menu-icon {
         width: 30px;
-        /* Ancho del icono */
+
         height: 20px;
-        /* Altura total del icono */
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* Espacio uniforme entre las líneas */
+
         cursor: pointer;
-        /* Indica que es clicable */
+        align-self: center;
     }
 
     .line {
@@ -1405,7 +1470,6 @@ button:hover {
     .nav-row {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(5, 4fr);
     }
 
     .buscador {
@@ -1591,7 +1655,7 @@ button:hover {
 
 }
 
-@media (min-width:480px) {
+@media (min-width:506px) {
     .totalCarritoMovil {
         display: none;
     }
@@ -1607,7 +1671,14 @@ button:hover {
     }
 }
 
-@media (max-width:417px) {
+@media (max-width:419px) {
+
+    .articulo .articuloP p {
+        font-size: 12px;
+        margin-bottom: 1%;
+
+    }
+
     .carrito {
         display: flex;
         flex-direction: column;
