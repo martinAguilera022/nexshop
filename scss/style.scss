@@ -1,0 +1,39 @@
+/*Archivo base*/
+
+@import"./utils/variables";
+@import"./utils/mixins";
+@import "./base/reset";
+/*components*/
+
+
+
+
+
+@import "./components/nav";
+@import "./components/buttons";
+@import"./components/cards-articulos";
+@import "./components/bg-img";
+@import "./components/footer";
+@import "./components/articulos-carrito";
+
+/*layout*/
+@import "./layout/index/flex-articulos";
+@import "./layout/index/ofertas";
+@import "./layout/index/grilla_secciones";
+@import "./layout/index/grilla-articulos";
+@import "./layout/secciones/tit-secciones";
+@import "./layout/carrito";
+@import "./layout/total-carrito";
+@import "./layout/perfil";
+@import "./layout/articulo";
+@import "./layout/secciones/popular-flex";
+@import "./layout/seccion-comentarios";
+@import "./layout/venta-seccion";
+
+
+/*Media-Querys*/
+@import "./utils/media-tablet";
+@import "./utils/media-tablet-s";
+@import "./utils/media-mobile";
+@import "./utils/media-mobile-s";
+

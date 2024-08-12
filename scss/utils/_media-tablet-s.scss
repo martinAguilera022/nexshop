@@ -1,0 +1,18 @@
+@media (max-width: 681px) {
+    .articuloEnCarrito {
+        .botonesArticulo {
+            div {
+                button {
+                    padding: 2px 4px;
+                }
+            }
+        }
+        .precioArt{
+            grid-row: 2/ 4;
+            margin-top: 12px;
+        }
+        .valoracion{
+            grid-row: 1/ 4;
+        }
+    }
+}

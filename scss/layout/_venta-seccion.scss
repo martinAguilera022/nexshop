@@ -1,0 +1,26 @@
+.ventaSeccion {
+    background-color: #d4d3d3;
+    margin: 9.25rem;
+    border-radius: 2.875rem;
+    padding: 0.25rem;
+    margin-top: 39px;
+    margin-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 200px;
+        margin-top: 20px;
+
+        input {
+            margin-bottom: 30px;
+            border: none;
+        }
+
+    }
+
+}

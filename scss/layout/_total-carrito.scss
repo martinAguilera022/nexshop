@@ -1,0 +1,44 @@
+.totalCarrito {
+
+
+    align-items: center;
+    border-left: .0625rem solid black;
+    text-align: center;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    border-left: .0625rem solid black;
+    grid-column: 2/3;
+    gap: 1.25rem;
+    margin-bottom: 5px;
+
+    .precioArt {
+
+        font-weight: 300;
+
+        font-size: 3.125rem;
+    }
+
+    .todosLosMovimientos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1.25rem;
+
+        div {
+            align-content: space-between;
+
+
+        }
+
+
+
+
+
+
+    }
+
+
+
+}

@@ -1,0 +1,46 @@
+.carrito {
+    margin: 1.25rem;
+    background-color: #D9D9D9;
+    border-radius: 2.875rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+    gap: .625rem;
+
+    .todoElCarrito {
+        margin: 1.25rem;
+
+    }
+
+    .totalCarrito {
+
+
+        .todosLosMovimientos {
+            display: flex;
+            flex-direction: row;
+
+            p {
+                font-size: 13px;
+                margin-bottom: 0;
+
+
+            }
+
+            .nombreMovimientos {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .movimientos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-bottom: 7px;
+            }
+
+        }
+
+    }
+
+
+}

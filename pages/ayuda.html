@@ -105,38 +105,41 @@
         <section class="menuLateral">
             <h2>Menú</h2>
             <ul>
-                <li><a href="#"><i class="fas fa-store icon"></i> Mi Perfil</a></li>
+                <li><a href="perfil.html"><i class="fas fa-store icon"></i> Mi Perfil</a></li>
                 <li><a href="mis-ventas.html"><i class="fas fa-store icon"></i> Mis Ventas</a></li>
                 <li><a href="mis-compras.html"><i class="fas fa-shopping-cart icon"></i> Mis Compras</a></li>
                 <li><a href="publicaciones.html"><i class="fas fa-bullhorn icon"></i> Publicaciones</a></li>
                 <li><a href="favoritos.html"><i class="fas fa-heart icon"></i> Favoritos</a></li>
 
-                <li><a href="ayuda.html"><i class="fas fa-question-circle icon"></i> Ayuda</a></li>
+                <li><a href="#"><i class="fas fa-question-circle icon"></i> Ayuda</a></li>
             </ul>
         </section>
 
         <div class="perfilVentana">
-
-
             <section class="perfil">
-                <img src="../img/people_14024731.png" alt="Foto de perfil">
-                <h1>Perfil de Usuario</h1>
-                <div class="usuarioInfo">
 
-                    <div class="info">
-                        <p>Nombre de Usuario</p>
-                        <p>Correo electrónico: usuario@example.com</p>
-                        <p>Ubicación: Ciudad, País</p>
-                        <!-- Otros detalles del perfil -->
-                    </div>
-                </div>
-                <div class="acciones">
-                    <button class="btonBlanco">Editar Perfil</button>
-                    <button class="btonAzul">Cerrar Sesión</button>
+                <div class="contacto">
+                    <h2>Contacto</h2>
+                    <p>Si no encontraste la respuesta que buscabas, puedes ponerte en contacto con nosotros:</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btonAzul btn-primary">Enviar</button>
+                    </form>
                 </div>
             </section>
-
         </div>
+
 
 
     </main>

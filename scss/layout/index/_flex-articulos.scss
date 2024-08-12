@@ -1,0 +1,41 @@
+.flex-articulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .flechas {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 1%;
+    }
+
+    button {
+
+        img {
+
+            width: 3.125rem;
+            height: 100%;
+            object-fit: contain;
+
+
+
+        }
+
+    }
+
+    .articulos {
+        gap: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

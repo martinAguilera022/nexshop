@@ -1,0 +1,48 @@
+footer {
+    color:$secondary-color;
+    background-color: $primary-color;
+    margin-top: 5%;
+    padding: 20px;
+
+    
+
+    .footerContainer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        background-color:$primary-color;
+
+        div {
+            flex: 1 1 200px;
+
+            text-align: center;
+
+
+
+            .footerList {
+                list-style: none;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+                    @include transition-scale(1s, 1.2);
+                  
+                }
+            }
+
+        }
+
+    }
+
+    .footerBottom {
+        text-align: center;
+
+        p {
+            font-size: 14px;
+            background-color:$primary-color;
+        }
+    }
+}

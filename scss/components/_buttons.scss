@@ -1,0 +1,40 @@
+button {
+    font-weight: bold;
+
+    padding: 1% 3%;
+    font-family: 'Inter', sans-serif;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #000;
+    color: $secondary-color;
+
+    @include transition-scale(1s, 1.2);
+
+
+
+}
+
+.btonAzul {
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    @include transition-scale(1s, 1.2);
+
+    &:hover {
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
+.eliminar {
+    background-color: $secondary-color;
+    color: $primary-color;
+    margin: 0.3125rem;
+    @include transition-scale(1s, 1.2);
+
+    &:hover {
+        background-color: #ff3333;
+
+    }
+}

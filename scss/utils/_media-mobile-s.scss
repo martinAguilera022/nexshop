@@ -1,0 +1,34 @@
+@media (max-width:419px) {
+    body {
+        font-size: small;
+    }
+
+    .popular {
+        .flechasArt {
+            .articulos {
+                a:nth-child(n+3) {
+                    display: none;
+                    /* Ocultar artículos después del tercero */
+                }
+            }
+        }
+    }
+
+    .carrito {
+        margin: 0 auto;
+        border-radius: 0;
+        margin-bottom: 170px;
+
+        .todoElCarrito {
+            margin: 2px;
+
+            .articuloEnCarrito {
+
+                grid-template-columns: repeat(8, auto);
+                grid-template-rows: repeat(1, 20px);
+            }
+
+        }
+    }
+
+}
