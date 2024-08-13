@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+    .todoElArticulo {
+        padding: 0.5rem;
+        margin: 10px auto;
+        /* Ajusta el margen en pantallas medianas */
+    }
+
+    .todoElArticulo {
+        margin: 20px;
+
+        .articulos {
+            gap: 0%;
+        }
+    }
+}

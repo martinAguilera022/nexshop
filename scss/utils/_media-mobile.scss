@@ -71,11 +71,24 @@
         }
     }
 
+
     .slogan {
         display: none;
     }
 
     .popular {
+        .flex-articulos {
+            .articulosPopulares {
+
+                a:nth-child(n+3) {
+                    display: none;
+
+                }
+
+
+            }
+        }
+
         h3 {
             font-size: 1.2em;
             font-weight: 600;
@@ -266,7 +279,7 @@
 
         width: 100%;
         z-index: 1000;
-        background-color:$secondary-color;
+        background-color: $secondary-color;
         color: $primary-color;
 
         .precioArt {
@@ -296,6 +309,33 @@
         }
 
 
+
+    }
+
+    .todoElArticulo {
+        width: 80%;
+
+        .infoArticulo {
+            display: flex;
+            flex-direction: column;
+
+            .articuloImg {
+                width: 60%;
+                margin-top: 18px;
+            }
+
+            .contenidoArt {
+                h4 {
+                    font-size: 15px;
+                }
+
+                .precioArt {
+                    font-size: 24px;
+                }
+            }
+
+
+        }
 
     }
 

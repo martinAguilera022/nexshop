@@ -442,30 +442,42 @@ footer {
   .perfil .usuarioInfo p {
     margin: 0.5rem 0; }
 
+main {
+  display: flex;
+  flex-direction: column; }
+
 .todoElArticulo {
-  margin: 9.25rem;
+  width: max-content;
+  width: 100%;
+  max-width: 56.125rem;
+  min-width: 300px;
   background-color: #d4d3d3;
   border-radius: 2.875rem;
   padding: 0.25rem;
-  margin-top: 39px;
-  margin-bottom: 1.5625rem;
-  align-items: center; }
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center; }
   .todoElArticulo .infoArticulo {
-    display: flex;
-    flex-direction: row; }
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
     .todoElArticulo .infoArticulo .articuloImg {
-      height: 500px;
       width: 100%;
+      max-width: 100%;
       object-fit: contain;
-      padding: 50px; }
+      margin: 0 auto;
+      padding: 10px; }
     .todoElArticulo .infoArticulo .contenidoArt {
+      grid-column: 2;
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: .625rem; }
       .todoElArticulo .infoArticulo .contenidoArt .precioArt {
-        font-size: 75px;
-        font-weight: 300; }
+        font-size: 40px; }
       .todoElArticulo .infoArticulo .contenidoArt .valoracion {
         display: flex;
         flex-direction: row;
@@ -479,6 +491,7 @@ footer {
   .todoElArticulo .caracteristicas {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     border-top: 1px solid black;
     padding-top: 3%; }
@@ -502,6 +515,10 @@ footer {
       text-align: start; }
   .todoElArticulo .verMenos {
     align-self: center; }
+
+.popular .flex-articulos .articulos a .articulosInteresantes img {
+  height: 100%;
+  width: 46%; }
 
 .popular {
   background-color: #002366;
@@ -549,7 +566,6 @@ footer {
     #comentariosSection .comentarios .comentarioUsuario {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(2, 60px);
       border-top: .0625rem solid black; }
       #comentariosSection .comentarios .comentarioUsuario img {
         height: 2.25rem;
@@ -675,16 +691,54 @@ footer {
       margin-bottom: 0; }
       .carrito .totalCarrito .todosLosMovimientos .nombreMovimientos h4 {
         font-size: 15px; }
-  .flex-articulos .articulos a:nth-child(n+4) {
+  .flex-articulos .articulos {
+    padding: 10px; }
+    .flex-articulos .articulos a:nth-child(n+4) {
+      display: none; }
+  .flex-articulos .articulosPopulares {
+    padding: 10px; }
+    .flex-articulos .articulosPopulares a:nth-child(n+4) {
+      display: none; }
+  .flex-articulos .flechas {
     display: none; }
   .articulosGrid {
     grid-template-columns: repeat(3, 1fr); }
     .articulosGrid a:nth-child(n+10) {
       display: none; }
-  .todoElArticulo .caracteristicas {
-    display: none; }
-  .todoElArticulo .descripcion {
-    display: none; } }
+  .todoElArticulo {
+    margin: 20px; }
+    .todoElArticulo .infoArticulo h4 {
+      font-size: medium; }
+    .todoElArticulo .infoArticulo .precioArt {
+      font-size: 40px; }
+    .todoElArticulo .articulos a:nth-child(n+4) {
+      display: none; }
+    .todoElArticulo .caracteristicas {
+      display: none; }
+    .todoElArticulo .descripcion {
+      display: none; }
+  #comentariosSection {
+    margin: 1.25rem;
+    color: black;
+    border-radius: 2.875rem;
+    background-color: #D9D9D9;
+    padding: 1.25rem; }
+    #comentariosSection .comentarios .comentarioUsuario img {
+      height: 2.25rem;
+      align-self: center; }
+    #comentariosSection .comentarios .comentarioUsuario p {
+      font-size: .6875rem; }
+    #comentariosSection .comentarios .comentarioUsuario .usuario h5 {
+      font-size: large;
+      margin-left: .3125rem; }
+    #comentariosSection .comentarios .comentarioUsuario .estrellasValoracion {
+      height: 26%; }
+      #comentariosSection .comentarios .comentarioUsuario .estrellasValoracion p {
+        font-size: 20px; }
+      #comentariosSection .comentarios .comentarioUsuario .estrellasValoracion img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; } }
 
 @media (max-width: 681px) {
   .articuloEnCarrito .botonesArticulo div button {
@@ -732,6 +786,8 @@ footer {
     margin-top: 5%;
     height: min-content; }
   .slogan {
+    display: none; }
+  .popular .flex-articulos .articulosPopulares a:nth-child(n+3) {
     display: none; }
   .popular h3 {
     font-size: 1.2em;
@@ -871,6 +927,18 @@ footer {
         margin-bottom: 1px; }
       .totalCarritoMovil .todosLosMovimientos h4 {
         font-size: small; }
+  .todoElArticulo {
+    width: 80%; }
+    .todoElArticulo .infoArticulo {
+      display: flex;
+      flex-direction: column; }
+      .todoElArticulo .infoArticulo .articuloImg {
+        width: 60%;
+        margin-top: 18px; }
+      .todoElArticulo .infoArticulo .contenidoArt h4 {
+        font-size: 15px; }
+      .todoElArticulo .infoArticulo .contenidoArt .precioArt {
+        font-size: 24px; }
   footer {
     font-size: .625rem; }
     footer .footerBottom {
@@ -898,4 +966,6 @@ footer {
       margin: 2px; }
       .carrito .todoElCarrito .articuloEnCarrito {
         grid-template-columns: repeat(8, auto);
-        grid-template-rows: repeat(1, 20px); } }
+        grid-template-rows: repeat(1, 20px); }
+  .popular .flex-articulos .articulosPopulares a:nth-child(n+2) {
+    display: none; } }
