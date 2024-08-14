@@ -2,8 +2,8 @@
     margin: 1.25rem;
     background-color: #D9D9D9;
     border-radius: 2.875rem;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+
+    @include grid(3fr 2fr, auto);
     height: 100%;
     gap: .625rem;
 
@@ -16,8 +16,7 @@
 
 
         .todosLosMovimientos {
-            display: flex;
-            flex-direction: row;
+            @include flex(row);
 
             p {
                 font-size: 13px;
@@ -27,13 +26,11 @@
             }
 
             .nombreMovimientos {
-                display: flex;
-                flex-direction: column;
+                @include flex(column);
             }
 
             .movimientos {
-                display: flex;
-                flex-direction: column;
+                @include flex(column);
                 justify-content: space-between;
                 padding-bottom: 7px;
             }

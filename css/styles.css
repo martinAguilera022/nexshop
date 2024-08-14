@@ -75,6 +75,10 @@ header {
           transition: transform 1s; }
           header nav ul li div a img:hover {
             transform: scale(1.2); }
+  header .movil-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   header .nav-item.dropdown .dropdown-toggle::after {
     display: none; }
 
@@ -131,6 +135,8 @@ button {
     margin-bottom: 2px; }
   .articulo p {
     margin-bottom: 5px; }
+  .articulo .articuloP {
+    font-size: 13px; }
 
 .slogan {
   background-image: url(../img/rectangle3.png);
@@ -304,6 +310,7 @@ footer {
 .section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   width: 100%; }
   .section .item {
     background-color: #d3d6d7;
@@ -327,6 +334,7 @@ footer {
 .articulosGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
   justify-content: center;
   gap: 2%;
   margin: 4.375rem;
@@ -349,6 +357,7 @@ footer {
   border-radius: 2.875rem;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
   height: 100%;
   gap: .625rem; }
   .carrito .todoElCarrito {
@@ -566,6 +575,7 @@ main {
     #comentariosSection .comentarios .comentarioUsuario {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: auto;
       border-top: .0625rem solid black; }
       #comentariosSection .comentarios .comentarioUsuario img {
         height: 2.25rem;
@@ -752,6 +762,7 @@ main {
 @media (max-width: 480px) {
   header .nav-row {
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr; }
     header .nav-row .menuTitulo {
       grid-column: 1/3;
@@ -780,7 +791,7 @@ main {
     justify-self: end; }
     header nav .campana {
       display: none; }
-    header nav ul {
+    header nav .lista-sec {
       display: none; }
   .articulo button {
     margin-top: 5%;
@@ -952,6 +963,10 @@ main {
   .totalCarritoMovil {
     display: none; } }
 
+@media (min-width: 480px) {
+  .movil-ul {
+    display: none; } }
+
 @media (max-width: 419px) {
   body {
     font-size: small; }
@@ -965,6 +980,7 @@ main {
     .carrito .todoElCarrito {
       margin: 2px; }
       .carrito .todoElCarrito .articuloEnCarrito {
+        display: grid;
         grid-template-columns: repeat(8, auto);
         grid-template-rows: repeat(1, 20px); }
   .popular .flex-articulos .articulosPopulares a:nth-child(n+2) {

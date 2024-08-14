@@ -6,3 +6,13 @@
     }
 }
 
+@mixin grid($columns, $row) {
+    display: grid;
+    grid-template-columns: $columns ;
+    grid-template-rows: $row;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}

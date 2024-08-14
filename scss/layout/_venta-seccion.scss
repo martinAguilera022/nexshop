@@ -5,14 +5,12 @@
     padding: 0.25rem;
     margin-top: 39px;
     margin-bottom: 1.5625rem;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     height: 100%;
     text-align: center;
 
     form {
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         margin: 200px;
         margin-top: 20px;
 

@@ -24,8 +24,8 @@
 
             .articuloEnCarrito {
 
-                grid-template-columns: repeat(8, auto);
-                grid-template-rows: repeat(1, 20px);
+                @include grid(repeat(8, auto), repeat(1, 20px));
+
             }
 
         }

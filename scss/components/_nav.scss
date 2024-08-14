@@ -1,6 +1,6 @@
 header {
-    background-color:$primary-color;
-    color:$secondary-color;
+    background-color: $primary-color;
+    color: $secondary-color;
     position: sticky;
     top: 0;
     width: 100%;
@@ -9,10 +9,10 @@ header {
 
     .nav-row {
         padding: 0.625rem 1.25rem;
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         justify-content: space-between;
         align-items: center;
+
         .menuTitulo {
             .menu-icon {
                 display: none;
@@ -39,10 +39,11 @@ header {
         h2 {
             a {
                 @include transition-scale(1s, 1.2);
+
                 &:hover {
 
 
-                   
+
                     font-weight: 800;
 
 
@@ -67,13 +68,13 @@ header {
     }
 
     nav {
-      
+
 
         padding-bottom: 0.625rem;
         margin-top: 0.125rem;
         gap: 1.25rem;
 
-       
+
 
 
         ul {
@@ -84,14 +85,14 @@ header {
             flex-direction: row;
             justify-content: center;
 
-           
+
             li {
                 margin: .3125rem;
-                
+
 
                 a {
                     padding: 0.5rem 0.75rem;
-                    color:$secondary-color;
+                    color: $secondary-color;
                 }
 
                 @include transition-scale(1s, 1.2);
@@ -108,6 +109,12 @@ header {
             }
         }
 
+
+    }
+
+    .movil-ul {
+        @include flex(column);
+        justify-content: center;
     }
 
     .nav-item.dropdown .dropdown-toggle::after {

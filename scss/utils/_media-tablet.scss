@@ -32,10 +32,8 @@
 
         .todoElCarrito {
             .articuloEnCarrito {
+                @include grid(repeat(6, 1fr), repeat(3, 1.875rem));
 
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: repeat(3, 1.875rem);
                 grid-column: 1 / 2;
                 margin-bottom: .625rem;
 

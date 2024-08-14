@@ -5,8 +5,7 @@
     border-left: .0625rem solid black;
     text-align: center;
     margin-top: 23px;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     border-left: .0625rem solid black;
     grid-column: 2/3;
     gap: 1.25rem;
@@ -20,8 +19,7 @@
     }
 
     .todosLosMovimientos {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         justify-content: space-between;
         width: 100%;
         padding: 1.25rem;

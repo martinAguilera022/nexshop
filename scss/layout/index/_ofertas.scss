@@ -1,14 +1,13 @@
 .ofertas {
 
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     text-align: center;
 
     h3 {
         text-align: center;
         font-size: 2.5rem;
 
-    
+
     }
 
     button {

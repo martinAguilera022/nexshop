@@ -1,6 +1,6 @@
 .section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
+    @include grid(1fr 1fr, auto);
 
     width: 100%;
 
