@@ -4,40 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nexshop - La mejor tienda online con estilo de Mercado Libre. Encuentra todo lo que necesitas.">
+    <meta name="keywords" content="tienda online, Nexshop, compras, mercado libre, productos">
+    <meta name="author" content="Martín Aguilera">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     </style>
+    <link rel="icon" href="./icons/N.ico" type="">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>NexShop</title>
+    <title>NexShop - Tienda Online</title>
 </head>
 
 <body>
     <header>
         <div class="nav-row">
             <div class="menuTitulo">
-                <div class="menu-icon ">
+                <div class="menu-icon">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
-
                 </div>
-                <h2 class="  fw-bolder ">NexShop</h2>
+                <h1 class="fw-bolder">NexShop</h1>
             </div>
             <div class="buscador">
-                <input type="text" placeholder="Buscar...">
+                <input type="search" placeholder="Buscar...">
             </div>
             <nav class="iconos d-flex justify-content-center">
-                <a class="icons" href="./pages/carrito.html"><img src="./icons/online-store-cart.png" alt="Carrito"></a>
-
+                <a class="icons" href="./pages/carrito.html" aria-label="Carrito">
+                    <img src="./icons/online-store-cart.png" alt="Carrito">
+                </a>
                 <div class="nav-item dropdown campana">
-
-                    <a class=" dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        aria-label="Notificaciones">
                         <img class="icons" src="./icons/break-bell.png" alt="Notificaciones" height="24px">
-
                     </a>
-
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li class="dropdown-header fw-bolder fs-5">Notificaciones</li>
                         <li>
@@ -53,55 +56,27 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <p class="fw-bolder mb-1">Usuario</p>
-                                        <p class="text-muted mb-0 text-truncate" style="max-width: 250px;">Lorem ipsum
-                                            dolor sit amet consectetur adipisicing elit. Repellendus facilis ducimus
-                                            cumque repudiandae non blanditiis voluptatum error neque mollitia ab sunt,
-                                            totam consequuntur esse ipsum optio dolor? Debitis, repudiandae in?</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <div>
-                                        <p class="fw-bolder mb-1">Usuario</p>
-                                        <p class="text-muted mb-0 text-truncate" style="max-width: 250px;">Lorem ipsum
-                                            dolor sit amet consectetur adipisicing elit. Repellendus facilis ducimus
-                                            cumque repudiandae non blanditiis voluptatum error neque mollitia ab sunt,
-                                            totam consequuntur esse ipsum optio dolor? Debitis, repudiandae in?</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        <!-- Repetir los elementos de notificación según sea necesario -->
                     </ul>
                 </div>
-
-
-                <a class="icons" href="./pages/perfil.html"><img src="./icons/profile-user.png" alt="Perfil"></a>
+                <a class="icons" href="./pages/perfil.html" aria-label="Perfil">
+                    <img src="./icons/profile-user.png" alt="Perfil">
+                </a>
             </nav>
         </div>
         <nav>
             <ul>
-                <li class="Categoria"><a href="#categorias">Categorias</a></li>
-                <li class="Categoria"><a href=#ofertas>Ofertas</a></li>
+                <li class="Categoria"><a href="#categorias">Categorías</a></li>
+                <li class="Categoria"><a href="#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./pages/venta.html">Venta</a></li>
-
             </ul>
         </nav>
     </header>
     <main>
-        <div class=" slogan">
-            <p class="display-1  h1 fw-bolder justify-content-center">El futuro de tus compras hoy</p>
-
-        </div>
-        <div class="section" id="categorias">
-
+        <section class="slogan">
+            <p class="display-1 h1 fw-bolder text-center">El futuro de tus compras hoy</p>
+        </section>
+        <section class="section" id="categorias">
             <a href="./pages/hogarMuebles.html">
                 <div class="item hogarMueble">
                     <p>Hogar y Muebles</p>
@@ -109,222 +84,234 @@
             </a>
             <a href="./pages/moda.html">
                 <div class="item moda">
-                    <p> Moda</p>
+                    <p>Moda</p>
                 </div>
             </a>
-
-
-
             <a href="./pages/electronica.html">
                 <div class="item electronica">
-                    <p>Electronica</p>
+                    <p>Electrónica</p>
                 </div>
             </a>
-
             <a href="./pages/bellezaSalud.html">
                 <div class="item bellezaSalud">
                     <p>Belleza y Salud</p>
                 </div>
             </a>
+        </section>
 
-        </div>
-
-        <div class="popular">
-            <h3 class="titulo-populares">Mas Populares</h3>
+        <section class="popular">
+            <h3 class="titulo-populares">Más Populares</h3>
             <div class="flex-articulos">
-                <button class="flechas"><img src="./img/left-arrow(1).png" alt=""></button>
+                <button class="flechas" aria-label="Página anterior">
+                    <img src="./img/left-arrow(1).png" alt="Flecha izquierda">
+                </button>
                 <div class="articulos">
-
                     <a href="./pages/articulo.html">
                         <div class="articulo art1">
-                            <img class="img-populares " src="./img/air-jordan-1.png" alt="Imagen 1">
+                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
                             <p>Nike Air Jordan Gris</p>
                             <p>$150.000,00</p>
                             <button>Añadir al carrito</button>
                         </div>
                     </a>
                     <a href="./pages/articulo.html">
-                        <div class="articulo art2">
-                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Imagen 1">
+                        <div class="articulo art1">
+                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                            <p>Nike Air Jordan Gris</p>
+                            <p>$150.000,00</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </a><a href="./pages/articulo.html">
+                        <div class="articulo art1">
+                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                            <p>Nike Air Jordan Gris</p>
+                            <p>$150.000,00</p>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </a><a href="./pages/articulo.html">
+                        <div class="articulo art1">
+                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
                             <p>Nike Air Jordan Gris</p>
                             <p>$150.000,00</p>
                             <button>Añadir al carrito</button>
                         </div>
                     </a>
                     <a href="./pages/articulo.html">
-                        <div class="articulo art3">
-                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Imagen 1">
-                            <p>Nike Air Jordan Gris</p>
-                            <p>$150.000,00</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                    <a href="./pages/articulo.html">
-                        <div class="articulo art4">
-                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Imagen 1">
-                            <p>Nike Air Jordan Gris</p>
-                            <p>$150.000,00</p>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </a>
-                    <a href="./pages/articulo.html">
-                        <div class="articulo art5">
-                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Imagen 1">
+                        <div class="articulo art1">
+                            <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
                             <p>Nike Air Jordan Gris</p>
                             <p>$150.000,00</p>
                             <button>Añadir al carrito</button>
                         </div>
                     </a>
                 </div>
-                <button class="flechas"><img src="./img/right-arrow.png" alt=""></button>
+                <button class="flechas" aria-label="Página siguiente">
+                    <img src="./img/right-arrow.png" alt="Flecha derecha">
+                </button>
             </div>
-        </div>
-        <div class="ofertas">
+        </section>
+
+        <section class="ofertas">
             <h3 id="ofertas" class="titulo">OFERTAS</h3>
             <div class="articulosGrid">
+
                 <a href="./pages/articulo.html">
                     <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
                         <div class="articuloP">
                             <p class="tituloOfertas">Nike Air Jordan Gris</p>
                             <p class="tituloOfertas">$150.000,00</p>
                             <p class="text-body-secondary">6 cuotas de $26.600</p>
                         </div>
                         <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
+                        </div>
+                        <button class="aniadirCarrito">Añadir al carrito</button>
+                    </div>
+                </a> <a href="./pages/articulo.html">
+                    <div class="articulo">
+                        <img class="img-populares" src="./img/air-jordan-1.png" alt="Nike Air Jordan Gris">
+                        <div class="articuloP">
+                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
+                            <p class="tituloOfertas">$150.000,00</p>
+                            <p class="text-body-secondary">6 cuotas de $26.600</p>
+                        </div>
+                        <div class="btonCarrito">
+                            <button aria-label="Añadir al carrito">
+                                <img src="./icons/online-store-cart.png" alt="Carrito">
+                            </button>
                         </div>
                         <button class="aniadirCarrito">Añadir al carrito</button>
                     </div>
                 </a>
-                <a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-                </a><a href="./pages/articulo.html">
-                    <div class="articulo">
-                        <img class="img-populares img-" src="./img/air-jordan-1.png" alt="Imagen 1">
-                        <div class="articuloP">
-                            <p class="tituloOfertas">Nike Air Jordan Gris</p>
-                            <p class="tituloOfertas">$150.000,00</p>
-                            <p class="text-body-secondary">6 cuotas de $26.600</p>
-                        </div>
-                        <div class="btonCarrito">
-                            <button><img src="./icons/online-store-cart.png" alt="carrito"></button>
-                        </div>
-                        <button class="aniadirCarrito">Añadir al carrito</button>
-                    </div>
-
-                </a>
-
-
             </div>
-            <button class="b">Ver mas</button>
-        </div>
+            <button class="b">Ver más</button>
+        </section>
     </main>
     <footer class="footer">
         <div class="footerContainer">
-
-            <!-- Sección de Información -->
             <div class="footerSection">
                 <h3 class="footerTitle">Información</h3>
                 <ul class="footerList">
@@ -334,18 +321,13 @@
                     <li><a href="#" class="footerLink">Políticas de privacidad</a></li>
                 </ul>
             </div>
-
-            <!-- Sección de Ayuda -->
             <div class="footerSection">
                 <h3 class="footerTitle">Ayuda</h3>
                 <ul class="footerList">
                     <li><a href="#" class="footerLink">Centro de ayuda</a></li>
-
                     <li><a href="#" class="footerLink">Preguntas frecuentes</a></li>
                 </ul>
             </div>
-
-            <!-- Sección de Redes Sociales -->
             <div class="footerSection">
                 <h3 class="footerTitle">Síguenos</h3>
                 <div class="socialLinks">
@@ -354,9 +336,7 @@
                     <a href="#" class="footerLink">Instagram</a>
                 </div>
             </div>
-
         </div>
-
         <div class="footerBottom">
             <p>© 2024 NexShop. Todos los derechos reservados.</p>
         </div>
@@ -365,9 +345,8 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCs/jckC7lDAy2dOws2V/xF4U"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
