@@ -11,7 +11,7 @@
 
     padding: 3.125rem;
 
-    
+
 
 
 }
@@ -21,23 +21,41 @@
 
 
 
-.hogarMueble {
-    background-image: url(../img/hogar.png);
+.buzos {
+    background-image: url(../img/buzos.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.remeras {
+    background-image: url(../img/remera.jpg);
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
 
 }
 
-.electronica {
-    background-image: url(../img/Electronica.png);
+.pantalones {
+    background-image: url(../img/pantalones.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.moda {
-    background-image: url(../img/Moda.png);
+.zapatillas {
+    background-image: url(../img/zapatillas.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.bellezaSalud {
-    background-image: url(../img/BellezaSalud.png);
+.accesorios {
+    background-image: url(../img/accesorio.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

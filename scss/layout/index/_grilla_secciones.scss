@@ -1,19 +1,54 @@
 .section {
-    
-    @include grid(1fr 1fr, auto);
-
+    align-self: center;
+    @include grid(repeat(4, 247px), auto);
+    height: 472px;
     width: 100%;
 
-    .item {
-        background-color: rgb(211, 214, 215);
-        margin: 1.5625rem;
+    background-color: $secondary-color;
+    grid-template-areas:
+        "buzos accesorios remeras remeras "
+        "buzos pantalones remeras remeras "
+        "buzos pantalones remeras remeras"
+        "buzos pantalones zapatillas zapatillas"
 
-        height: 12.5rem;
+    ;
+    padding: 0.625rem 5.625rem;
+    gap: 9px;
+    justify-content: center;
+
+
+    .buzos {
+        grid-area: buzos;
+    }
+
+
+
+    .accesorios {
+        grid-area: accesorios;
+    }
+
+    .remeras {
+        grid-area: remeras;
+    }
+
+    .zapatillas {
+        grid-area: zapatillas;
+    }
+
+    .pantalones {
+        grid-area: pantalones;
+    }
+
+    .item {
+
+
         text-align: center;
         align-content: center;
         font-size: 2.5rem;
         font-weight: 900;
+        border-radius: 15px;
 
+       
         p {
             color: $secondary-color;
             text-align: center;
@@ -23,8 +58,8 @@
         @include transition-scale(1s, 1.2);
 
         &:hover {
-            background-color: #6d6d6d;
-
+            
+            background-color: rgba(0, 0, 0, 0.773);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     }

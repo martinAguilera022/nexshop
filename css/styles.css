@@ -16,7 +16,7 @@ a {
 
 /*components*/
 header {
-  background-color: #002366;
+  background-color: #000000;
   color: #ffffff;
   position: sticky;
   top: 0;
@@ -89,25 +89,26 @@ button {
   border-style: none;
   font-size: medium;
   cursor: pointer;
-  background-color: #000;
+  background-color: #000000;
   color: #ffffff;
+  border-radius: 15px;
   transition: transform 1s; }
   button:hover {
     transform: scale(1.2); }
 
 .btonAzul {
-  background-color: #002366;
+  background-color: #000000;
   color: #ffffff;
   transition: transform 1s; }
   .btonAzul:hover {
     transform: scale(1.2); }
   .btonAzul:hover {
-    color: #002366;
+    color: #000000;
     background-color: #ffffff; }
 
 .eliminar {
   background-color: #ffffff;
-  color: #002366;
+  color: #000000;
   margin: 0.3125rem;
   transition: transform 1s; }
   .eliminar:hover {
@@ -116,10 +117,16 @@ button {
     background-color: #ff3333; }
 
 .articulo {
+  width: 250px;
+  height: 350px;
   background-color: #8d8d8d;
   text-align: center;
   box-shadow: 1px 1px .625rem #000;
-  transition: transform 1s; }
+  transition: transform 1s;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .articulo:hover {
     transform: scale(1.2); }
   .articulo:hover {
@@ -128,15 +135,21 @@ button {
     box-shadow: 1px 1px 1.25rem #000; }
   .articulo img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     margin-bottom: 0.3125rem;
-    object-fit: cover; }
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px; }
   .articulo button {
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    border-radius: 5px;
+    margin: 3px 31px 19px; }
   .articulo p {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    color: #000000; }
   .articulo .articuloP {
     font-size: 13px; }
+  .articulo .btonCarrito {
+    display: none; }
 
 .slogan {
   background-image: url(../img/rectangle3.png);
@@ -146,25 +159,39 @@ button {
   height: 31.25rem;
   padding: 3.125rem; }
 
-.hogarMueble {
-  background-image: url(../img/hogar.png);
-  background-size: cover; }
+.buzos {
+  background-image: url(../img/buzos.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.electronica {
-  background-image: url(../img/Electronica.png);
-  background-size: cover; }
+.remeras {
+  background-image: url(../img/remera.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
-.moda {
-  background-image: url(../img/Moda.png);
-  background-size: cover; }
+.pantalones {
+  background-image: url(../img/pantalones.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-.bellezaSalud {
-  background-image: url(../img/BellezaSalud.png);
-  background-size: cover; }
+.zapatillas {
+  background-image: url(../img/zapatillas.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.accesorios {
+  background-image: url(../img/accesorio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 footer {
   color: #ffffff;
-  background-color: #002366;
+  background-color: #000000;
   margin-top: 5%;
   padding: 20px; }
   footer .footerContainer {
@@ -173,7 +200,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #002366; }
+    background-color: #000000; }
     footer .footerContainer div {
       flex: 1 1 200px;
       text-align: center; }
@@ -189,7 +216,7 @@ footer {
     text-align: center; }
     footer .footerBottom p {
       font-size: 14px;
-      background-color: #002366; }
+      background-color: #000000; }
 
 .articuloEnCarrito {
   display: grid;
@@ -293,7 +320,14 @@ footer {
     gap: 2%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    overflow-y: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px 0;
+    height: 420px; }
+    .flex-articulos .articulos::-webkit-scrollbar {
+      display: none; }
 
 .ofertas {
   display: flex;
@@ -308,18 +342,33 @@ footer {
     margin-top: 1.3125rem; }
 
 .section {
+  align-self: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 247px);
   grid-template-rows: auto;
-  width: 100%; }
+  height: 472px;
+  width: 100%;
+  background-color: #ffffff;
+  grid-template-areas: "buzos accesorios remeras remeras " "buzos pantalones remeras remeras " "buzos pantalones remeras remeras" "buzos pantalones zapatillas zapatillas";
+  padding: 0.625rem 5.625rem;
+  gap: 9px;
+  justify-content: center; }
+  .section .buzos {
+    grid-area: buzos; }
+  .section .accesorios {
+    grid-area: accesorios; }
+  .section .remeras {
+    grid-area: remeras; }
+  .section .zapatillas {
+    grid-area: zapatillas; }
+  .section .pantalones {
+    grid-area: pantalones; }
   .section .item {
-    background-color: #d3d6d7;
-    margin: 1.5625rem;
-    height: 12.5rem;
     text-align: center;
     align-content: center;
     font-size: 2.5rem;
     font-weight: 900;
+    border-radius: 15px;
     transition: transform 1s; }
     .section .item p {
       color: #ffffff;
@@ -328,7 +377,7 @@ footer {
     .section .item:hover {
       transform: scale(1.2); }
     .section .item:hover {
-      background-color: #6d6d6d;
+      background-color: rgba(0, 0, 0, 0.773);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 .articulosGrid {
@@ -340,6 +389,9 @@ footer {
   margin: 4.375rem;
   margin-top: 2%;
   margin-bottom: 3%; }
+  .articulosGrid .articulo {
+    height: 100%;
+    width: 100%; }
 
 .tituloCat {
   background-size: cover;
@@ -401,7 +453,7 @@ footer {
       align-content: space-between; }
 
 .menuLateral {
-  background-color: #002366;
+  background-color: #000000;
   position: fixed;
   top: 7.0625rem;
   left: 0;
@@ -467,8 +519,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
-  flex-direction: column;
   align-self: center; }
   .todoElArticulo .infoArticulo {
     display: grid;
@@ -530,14 +580,13 @@ main {
   width: 46%; }
 
 .popular {
-  background-color: #002366;
+  background-color: #000000;
   padding-top: 20px;
   color: #ffffff;
   text-align: center;
   padding-bottom: 30px; }
   .popular .titulo-populares {
-    font-size: 1.5rem;
-    margin-bottom: 20px; }
+    font-size: 1.5rem; }
   .popular .articulos {
     display: flex;
     align-items: center;
@@ -703,8 +752,6 @@ main {
         font-size: 15px; }
   .flex-articulos .articulos {
     padding: 10px; }
-    .flex-articulos .articulos a:nth-child(n+4) {
-      display: none; }
   .flex-articulos .articulosPopulares {
     padding: 10px; }
     .flex-articulos .articulosPopulares a:nth-child(n+4) {
@@ -721,8 +768,6 @@ main {
       font-size: medium; }
     .todoElArticulo .infoArticulo .precioArt {
       font-size: 40px; }
-    .todoElArticulo .articulos a:nth-child(n+4) {
-      display: none; }
     .todoElArticulo .caracteristicas {
       display: none; }
     .todoElArticulo .descripcion {
@@ -921,7 +966,7 @@ main {
     width: 100%;
     z-index: 1000;
     background-color: #ffffff;
-    color: #002366; }
+    color: #000000; }
     .totalCarritoMovil .precioArt {
       font-size: 20px; }
     .totalCarritoMovil h3 {
@@ -982,6 +1027,4 @@ main {
       .carrito .todoElCarrito .articuloEnCarrito {
         display: grid;
         grid-template-columns: repeat(8, auto);
-        grid-template-rows: repeat(1, 20px); }
-  .popular .flex-articulos .articulosPopulares a:nth-child(n+2) {
-    display: none; } }
+        grid-template-rows: repeat(1, 20px); } }

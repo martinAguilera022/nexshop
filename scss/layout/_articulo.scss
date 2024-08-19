@@ -18,8 +18,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    
     align-self: center;
 
     .infoArticulo {
@@ -30,6 +29,7 @@ main {
         .articuloImg {
             width: 100%;
             max-width: 100%;
+            
             object-fit: contain;
             margin: 0 auto;
             padding: 10px;

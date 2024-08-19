@@ -6,9 +6,9 @@ button {
     border-style: none;
     font-size: medium;
     cursor: pointer;
-    background-color: #000;
+    background-color: $primary-color;
     color: $secondary-color;
-
+    border-radius: 15px;
     @include transition-scale(1s, 1.2);
 
 
