@@ -344,7 +344,7 @@ footer {
 .section {
   align-self: center;
   display: grid;
-  grid-template-columns: repeat(4, 247px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   height: 472px;
   width: 100%;
@@ -391,7 +391,11 @@ footer {
   margin-bottom: 3%; }
   .articulosGrid .articulo {
     height: 100%;
-    width: 100%; }
+    width: auto; }
+    .articulosGrid .articulo button {
+      margin: 0px 12px 5px; }
+    .articulosGrid .articulo img {
+      height: 200px; }
 
 .tituloCat {
   background-size: cover;
@@ -677,22 +681,43 @@ main {
       border: none; }
 
 /*Media-Querys*/
+@media (max-width: 1003px) {
+  .articulosGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; }
+    .articulosGrid .articulo button {
+      font-size: small; }
+    .articulosGrid a:nth-child(n+9) {
+      display: none; } }
+
 @media (max-width: 768px) {
   button {
     font-size: 12px; }
   .slogan {
     font-size: 40px;
     height: 300px; }
-  .section .item {
-    height: 150px;
-    text-align: center;
-    align-content: center;
-    font-size: 30px;
-    font-weight: 800;
-    background-color: #d3d6d7;
-    padding: 0.625rem;
-    margin: 5%;
-    transition: background-color 0.3s, transform 0.3s; }
+  .articulo {
+    height: 300px;
+    width: 200px;
+    font-size: 12px; }
+  .section {
+    display: grid;
+    grid-template-columns: repeat(3, 159px);
+    grid-template-rows: auto;
+    grid-template-areas: "buzos accesorios remeras  " "buzos pantalones remeras " "buzos pantalones zapatillas"; }
+    .section .item p {
+      font-size: large; }
+    .section .buzos {
+      grid-area: buzos; }
+    .section .accesorios {
+      grid-area: accesorios; }
+    .section .remeras {
+      grid-area: remeras; }
+    .section .zapatillas {
+      grid-area: zapatillas; }
+    .section .pantalones {
+      grid-area: pantalones; }
   .carrito {
     margin: 1.25rem;
     margin-top: 1.25rem; }
@@ -751,6 +776,7 @@ main {
       .carrito .totalCarrito .todosLosMovimientos .nombreMovimientos h4 {
         font-size: 15px; }
   .flex-articulos .articulos {
+    height: auto;
     padding: 10px; }
   .flex-articulos .articulosPopulares {
     padding: 10px; }
@@ -760,7 +786,7 @@ main {
     display: none; }
   .articulosGrid {
     grid-template-columns: repeat(3, 1fr); }
-    .articulosGrid a:nth-child(n+10) {
+    .articulosGrid a:nth-child(n+7) {
       display: none; }
   .todoElArticulo {
     margin: 20px; }
@@ -843,6 +869,29 @@ main {
     height: min-content; }
   .slogan {
     display: none; }
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "buzos accesorios" "buzos pantalones" "buzos remeras" "zapatillas remeras";
+    padding: 6px 14px;
+    height: 400px; }
+    .section .item {
+      text-align: center;
+      align-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      margin: 2%; }
+    .section .buzos {
+      grid-area: buzos; }
+    .section .accesorios {
+      grid-area: accesorios; }
+    .section .remeras {
+      grid-area: remeras; }
+    .section .zapatillas {
+      grid-area: zapatillas; }
+    .section .pantalones {
+      grid-area: pantalones; }
   .popular .flex-articulos .articulosPopulares a:nth-child(n+3) {
     display: none; }
   .popular h3 {
@@ -861,13 +910,6 @@ main {
     padding-top: 0; }
     .popular .flex-articulos .articulos a:nth-child(n+4) {
       display: none; }
-  .section .item {
-    text-align: center;
-    align-content: center;
-    font-size: 20px;
-    font-weight: 900;
-    margin: 2%;
-    height: 5.8125rem; }
   .articulosGrid {
     display: flex;
     flex-direction: column;

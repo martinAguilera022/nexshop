@@ -1,15 +1,18 @@
-@media (max-width: 992px) {
-    .todoElArticulo {
-        padding: 0.5rem;
-        margin: 10px auto;
-        /* Ajusta el margen en pantallas medianas */
-    }
+@media (max-width: 1003px) {
 
-    .todoElArticulo {
-        margin: 20px;
 
-        .articulos {
-            gap: 0%;
+    .articulosGrid {
+        @include grid(repeat(4, 1fr), auto);
+
+        .articulo {
+            button {
+                font-size: small;
+            }
+        }
+
+        a:nth-child(n+9) {
+            display: none;
+
         }
     }
 }

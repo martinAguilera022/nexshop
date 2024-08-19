@@ -1,6 +1,6 @@
 .section {
     align-self: center;
-    @include grid(repeat(4, 247px), auto);
+    @include grid(repeat(4, 1fr), auto);
     height: 472px;
     width: 100%;
 
@@ -48,7 +48,7 @@
         font-weight: 900;
         border-radius: 15px;
 
-       
+
         p {
             color: $secondary-color;
             text-align: center;
@@ -58,7 +58,7 @@
         @include transition-scale(1s, 1.2);
 
         &:hover {
-            
+
             background-color: rgba(0, 0, 0, 0.773);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }

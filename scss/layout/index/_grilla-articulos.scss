@@ -9,6 +9,14 @@
 
     .articulo {
         height: 100%;
-        width: 100%;
+        width: auto;
+
+        button {
+            margin: 0px 12px 5px;
+        }
+
+        img {
+            height: 200px;
+        }
     }
 }
