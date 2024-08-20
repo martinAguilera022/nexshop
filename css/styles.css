@@ -361,6 +361,10 @@ footer {
     grid-area: zapatillas; }
   .section .pantalones {
     grid-area: pantalones; }
+  .section a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .section .item {
     text-align: center;
     align-content: center;
