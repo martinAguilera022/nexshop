@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Archivo base*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
@@ -780,10 +779,6 @@ main {
   .flex-articulos .articulos {
     height: auto;
     padding: 10px; }
-  .flex-articulos .articulosPopulares {
-    padding: 10px; }
-    .flex-articulos .articulosPopulares a:nth-child(n+4) {
-      display: none; }
   .flex-articulos .flechas {
     display: none; }
   .articulosGrid {
@@ -908,8 +903,6 @@ main {
     margin: 0 auto;
     padding: 13px;
     padding-top: 0; }
-    .flex-articulos .articulos a:nth-child(n+4) {
-      display: none; }
     .flex-articulos .articulos .articulo {
       height: 267px;
       width: 172px;
@@ -1064,9 +1057,6 @@ main {
 @media (max-width: 419px) {
   body {
     font-size: small; }
-  .popular .flechasArt .articulos a:nth-child(n+3) {
-    display: none;
-    /* Ocultar artículos después del tercero */ }
   .carrito {
     margin: 0 auto;
     border-radius: 0;

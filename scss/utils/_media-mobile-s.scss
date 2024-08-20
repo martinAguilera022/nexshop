@@ -3,16 +3,7 @@
         font-size: small;
     }
 
-    .popular {
-        .flechasArt {
-            .articulos {
-                a:nth-child(n+3) {
-                    display: none;
-                    /* Ocultar artículos después del tercero */
-                }
-            }
-        }
-    }
+    
 
     .carrito {
         margin: 0 auto;
