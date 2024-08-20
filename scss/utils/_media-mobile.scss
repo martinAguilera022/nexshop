@@ -120,48 +120,43 @@
     }
 
 
-    .popular {
-        .flex-articulos {
-            .articulosPopulares {
-
-                a:nth-child(n+3) {
-                    display: none;
-
-                }
 
 
-            }
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: .5625rem;
+    }
+
+    .titulo-populares {
+        font-size: 1.2em;
+
+        font-weight: 600;
+    }
+
+    .flex-articulos {
+        .flechas {
+            display: none;
         }
 
-        h3 {
-            font-size: 1.2em;
-            font-weight: 600;
-            margin-top: .5625rem;
-        }
+        .articulos {
+            gap: 4%;
+            margin: 0 auto;
+            padding: 13px;
+            padding-top: 0;
 
-        .titulo-populares {
-            font-size: 1.2em;
-
-            font-weight: 600;
-        }
-
-        .flex-articulos {
-            .flechas {
+            a:nth-child(n+4) {
                 display: none;
             }
 
-            .articulos {
-                gap: 4%;
-                margin: 0 auto;
-                padding: 13px;
-                padding-top: 0;
-
-                a:nth-child(n+4) {
-                    display: none;
-                }
+            .articulo {
+                height: 267px;
+                width: 172px;
+                font-size: 10px;
             }
         }
     }
+
 
 
 
@@ -171,6 +166,7 @@
         align-content: space-between;
         margin: 0 auto;
         margin-top: 2px;
+        width: 320px;
 
         .articulo {
             @include flex(row);
@@ -179,12 +175,17 @@
             margin-bottom: 5%;
 
             .img-populares {
-                width: 100px;
+                width: 94px;
                 object-fit: contain;
                 align-self: center;
 
                 height: 100%;
                 margin-bottom: 0%;
+                border-radius: 15px 0px 0px 15px;
+            }
+
+            .articuloP {
+                align-self: center;
             }
 
             p {
@@ -195,7 +196,7 @@
             .btonCarrito {
                 padding: 10px;
 
-                margin-right: 20px;
+
                 align-self: center;
 
                 img {
@@ -382,8 +383,12 @@
 @media (min-width:481px) {
 
     .articulosGrid {
-        .btonCarrito {
-            display: none;
+        a {
+            .articulo {
+                .btonCarrito {
+                    display: none;
+                }
+            }
         }
     }
 

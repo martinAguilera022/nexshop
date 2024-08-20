@@ -148,8 +148,6 @@ button {
     color: #000000; }
   .articulo .articuloP {
     font-size: 13px; }
-  .articulo .btonCarrito {
-    display: none; }
 
 .slogan {
   background-image: url(../img/rectangle3.png);
@@ -892,31 +890,34 @@ main {
       grid-area: zapatillas; }
     .section .pantalones {
       grid-area: pantalones; }
-  .popular .flex-articulos .articulosPopulares a:nth-child(n+3) {
-    display: none; }
-  .popular h3 {
-    font-size: 1.2em;
+  h3 {
+    font-size: 20px;
     font-weight: 600;
     margin-top: .5625rem; }
-  .popular .titulo-populares {
+  .titulo-populares {
     font-size: 1.2em;
     font-weight: 600; }
-  .popular .flex-articulos .flechas {
+  .flex-articulos .flechas {
     display: none; }
-  .popular .flex-articulos .articulos {
+  .flex-articulos .articulos {
     gap: 4%;
     margin: 0 auto;
     padding: 13px;
     padding-top: 0; }
-    .popular .flex-articulos .articulos a:nth-child(n+4) {
+    .flex-articulos .articulos a:nth-child(n+4) {
       display: none; }
+    .flex-articulos .articulos .articulo {
+      height: 267px;
+      width: 172px;
+      font-size: 10px; }
   .articulosGrid {
     display: flex;
     flex-direction: column;
     height: max-content;
     align-content: space-between;
     margin: 0 auto;
-    margin-top: 2px; }
+    margin-top: 2px;
+    width: 320px; }
     .articulosGrid .articulo {
       display: flex;
       flex-direction: row;
@@ -924,17 +925,19 @@ main {
       justify-content: space-between;
       margin-bottom: 5%; }
       .articulosGrid .articulo .img-populares {
-        width: 100px;
+        width: 94px;
         object-fit: contain;
         align-self: center;
         height: 100%;
-        margin-bottom: 0%; }
+        margin-bottom: 0%;
+        border-radius: 15px 0px 0px 15px; }
+      .articulosGrid .articulo .articuloP {
+        align-self: center; }
       .articulosGrid .articulo p {
         align-self: center;
         padding: .125rem; }
       .articulosGrid .articulo .btonCarrito {
         padding: 10px;
-        margin-right: 20px;
         align-self: center; }
         .articulosGrid .articulo .btonCarrito img {
           width: 40px;
@@ -1045,7 +1048,7 @@ main {
         font-size: 9px; } }
 
 @media (min-width: 481px) {
-  .articulosGrid .btonCarrito {
+  .articulosGrid a .articulo .btonCarrito {
     display: none; }
   .totalCarritoMovil {
     display: none; } }
