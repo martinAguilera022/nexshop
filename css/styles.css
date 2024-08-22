@@ -417,8 +417,9 @@ footer {
     letter-spacing: 10px; }
   .todos-accesorios .grid-accesorios {
     columns: 5;
-    width: 1100px;
-    padding: 20px;
+    width: 100%;
+    padding: 82px;
+    padding-top: 20px;
     justify-content: center; }
     .todos-accesorios .grid-accesorios .articulo {
       position: relative;
@@ -458,18 +459,20 @@ footer {
   gap: 21px;
   justify-content: center; }
 
-.jean {
-  background-image: url(../img/jeans-bg.jpg); }
-
 .seccion-pant {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 30px; }
   .seccion-pant h2 {
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 20px;
     font-size: 40px;
     font-weight: 800; }
+
+.jean {
+  background-image: url(../img/jeans-bg.jpg); }
+  .jean h2 {
+    color: #ffffff; }
 
 .ropa-black {
   text-align: center;
@@ -1156,7 +1159,42 @@ main {
       #comentariosSection .comentarios .comentarioUsuario .estrellasValoracion img {
         width: 100%;
         height: 100%;
-        object-fit: contain; } }
+        object-fit: contain; }
+  .pestania-nombre h1 {
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 10px; }
+  .todos-accesorios h2 {
+    font-size: 30px; }
+  .todos-accesorios .grid-accesorios {
+    columns: 3;
+    width: 100%;
+    padding: 60px;
+    padding-top: 20px;
+    justify-content: center; }
+    .todos-accesorios .grid-accesorios .articulo {
+      position: relative;
+      display: inline-block;
+      color: #000000;
+      width: 100%;
+      height: 100%;
+      margin-top: 4px; }
+      .todos-accesorios .grid-accesorios .articulo img {
+        border-radius: 15px 15px 0px 0px; }
+      .todos-accesorios .grid-accesorios .articulo .info-arti {
+        position: relative;
+        border-radius: 0px 15px;
+        width: 100%;
+        height: 100%;
+        background: rgba(183, 183, 183, 0.7);
+        border-radius: 15px;
+        border-radius: 0px 0px 15PX 15PX;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: opacity 0.3s ease; } }
 
 @media (max-width: 681px) {
   .articuloEnCarrito .botonesArticulo div button {
@@ -1165,7 +1203,14 @@ main {
     grid-row: 2/ 4;
     margin-top: 12px; }
   .articuloEnCarrito .valoracion {
-    grid-row: 1/ 4; } }
+    grid-row: 1/ 4; }
+  .pestania-nombre h1 {
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 10px; }
+  .todos-accesorios .grid-accesorios .articulo button {
+    margin: 0;
+    margin-bottom: 5px; } }
 
 @media (max-width: 480px) {
   header .nav-row {

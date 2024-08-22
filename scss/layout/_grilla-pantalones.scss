@@ -7,23 +7,26 @@
 
 }
 
-.jean {
-
-    background-image: url(../img/jeans-bg.jpg);
-
-
-}
-
 .seccion-pant {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 30px;
 
     h2 {
-        color: $secondary-color;
+        color: $primary-color;
         letter-spacing: 20px;
         font-size: 40px;
         font-weight: 800;
 
     }
+}
+
+.jean {
+
+    background-image: url(../img/jeans-bg.jpg);
+
+    h2 {
+        color: $secondary-color;
+    }
+
 }

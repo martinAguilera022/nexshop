@@ -18,5 +18,22 @@
         }
     }
 
-    
+    .pestania-nombre {
+        h1 {
+            font-weight: 900;
+            font-size: 40px;
+            letter-spacing: 10px;
+        }
+    }
+
+    .todos-accesorios {
+        .grid-accesorios {
+            .articulo {
+                button {
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }
