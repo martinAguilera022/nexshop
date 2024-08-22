@@ -186,12 +186,20 @@ button {
   background-repeat: no-repeat;
   background-position: center; }
 
-.buzos-pestania {
+.pestania-nombre {
   background-image: url(../img/image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px; }
+  height: 300px;
+  color: #000000;
+  text-align: center;
+  justify-items: center;
+  align-content: center; }
+  .pestania-nombre h1 {
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: 10px; }
 
 footer {
   color: #ffffff;
@@ -301,58 +309,177 @@ footer {
         display: none; } }
 
 /*layout*/
-.section-pantalones {
-  background-color: #000000; }
-
-.grilla-pantalones {
-  gap: 20px;
-  margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: auto;
-  padding: 12px;
+.zapatillas-y-marca {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  text-align: center; }
-  .grilla-pantalones .articulo {
-    position: relative;
-    display: inline-block;
-    color: #000000;
-    width: 100%;
-    height: 100%; }
-    .grilla-pantalones .articulo img {
+  align-items: center; }
+  .zapatillas-y-marca .marca {
+    object-fit: contain;
+    width: 270px; }
+  .zapatillas-y-marca .zapas-vans {
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3, 140px); }
+    .zapatillas-y-marca .zapas-vans .zapatilla-vans {
+      grid-column: 1/3;
+      grid-row: 1/3; }
+    .zapatillas-y-marca .zapas-vans .articulo {
+      position: relative;
+      display: inline-block;
+      color: #000000;
       width: 100%;
       height: 100%;
-      border-radius: 15px; }
-    .grilla-pantalones .articulo .img-populares {
-      width: 100%;
-      display: block; }
-    .grilla-pantalones .articulo .info-arti {
-      position: absolute;
-      top: 0;
-      left: 0;
+      align-self: center; }
+      .zapatillas-y-marca .zapas-vans .articulo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 0; }
+      .zapatillas-y-marca .zapas-vans .articulo .img-populares {
+        width: 100%;
+        display: block; }
+      .zapatillas-y-marca .zapas-vans .articulo .info-arti {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(183, 183, 183, 0.7);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .zapatillas-y-marca .zapas-vans .articulo:hover .info-arti {
+        opacity: 1; }
+  .zapatillas-y-marca .zapas-adidas {
+    justify-content: end;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3, 140px); }
+    .zapatillas-y-marca .zapas-adidas .zapatilla-adidas {
+      grid-column: 1/3;
+      grid-row: 1/3; }
+    .zapatillas-y-marca .zapas-adidas .articulo {
+      position: relative;
+      display: inline-block;
+      color: #000000;
       width: 100%;
       height: 100%;
-      background: rgba(183, 183, 183, 0.7);
-      border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease; }
-    .grilla-pantalones .articulo:hover .info-arti {
-      opacity: 1; }
+      align-self: center; }
+      .zapatillas-y-marca .zapas-adidas .articulo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 0; }
+      .zapatillas-y-marca .zapas-adidas .articulo .img-populares {
+        width: 100%;
+        display: block; }
+      .zapatillas-y-marca .zapas-adidas .articulo .info-arti {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(183, 183, 183, 0.7);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .zapatillas-y-marca .zapas-adidas .articulo:hover .info-arti {
+        opacity: 1; }
 
-.buzos-black {
+.vans {
+  background-color: black; }
+
+.todos-accesorios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px; }
+  .todos-accesorios h2 {
+    color: #000000;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 10px; }
+  .todos-accesorios .grid-accesorios {
+    columns: 5;
+    width: 1100px;
+    padding: 20px;
+    justify-content: center; }
+    .todos-accesorios .grid-accesorios .articulo {
+      position: relative;
+      display: inline-block;
+      color: #000000;
+      width: 100%;
+      height: 100%;
+      align-self: center; }
+      .todos-accesorios .grid-accesorios .articulo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 0; }
+      .todos-accesorios .grid-accesorios .articulo .img-populares {
+        width: 100%;
+        display: block; }
+      .todos-accesorios .grid-accesorios .articulo .info-arti {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(183, 183, 183, 0.7);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .todos-accesorios .grid-accesorios .articulo:hover .info-arti {
+        opacity: 1; }
+
+.pantalones-articulos {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  justify-content: center; }
+
+.jean {
+  background-image: url(../img/jeans-bg.jpg); }
+
+.seccion-pant {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px; }
+  .seccion-pant h2 {
+    color: #ffffff;
+    letter-spacing: 20px;
+    font-size: 40px;
+    font-weight: 800; }
+
+.ropa-black {
   text-align: center;
   background-color: #000000; }
-  .buzos-black h2 {
+  .ropa-black h2 {
     color: #ffffff;
     font-weight: 900;
     font-size: 50px;
     letter-spacing: 10px; }
-  .buzos-black .grilla-buzos {
+  .ropa-black .grilla-ropa {
     display: grid;
     gap: 20px;
     margin: 0 auto;
@@ -362,27 +489,27 @@ footer {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .buzos-black .grilla-buzos .img-modelos-1 {
+    .ropa-black .grilla-ropa .img-modelos-1 {
       grid-column: 1/3;
       grid-row: 1/3;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 15px; }
-    .buzos-black .grilla-buzos .articulo {
+    .ropa-black .grilla-ropa .articulo {
       position: relative;
       display: inline-block;
       color: #000000;
       width: 100%;
       height: 100%; }
-      .buzos-black .grilla-buzos .articulo img {
+      .ropa-black .grilla-ropa .articulo img {
         width: 100%;
         height: 100%;
         border-radius: 15px; }
-      .buzos-black .grilla-buzos .articulo .img-populares {
+      .ropa-black .grilla-ropa .articulo .img-populares {
         width: 100%;
         display: block; }
-      .buzos-black .grilla-buzos .articulo .info-arti {
+      .ropa-black .grilla-ropa .articulo .info-arti {
         position: absolute;
         top: 0;
         left: 0;
@@ -396,18 +523,18 @@ footer {
         align-items: center;
         opacity: 0;
         transition: opacity 0.3s ease; }
-      .buzos-black .grilla-buzos .articulo:hover .info-arti {
+      .ropa-black .grilla-ropa .articulo:hover .info-arti {
         opacity: 1; }
 
-.buzos-white {
+.ropa-white {
   text-align: center;
   background-color: #ffffff; }
-  .buzos-white h2 {
+  .ropa-white h2 {
     color: #000000;
     font-weight: 900;
     font-size: 50px;
     letter-spacing: 10px; }
-  .buzos-white .grilla-buzos {
+  .ropa-white .grilla-ropa {
     display: grid;
     gap: 20px;
     margin: 0 auto;
@@ -417,27 +544,27 @@ footer {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .buzos-white .grilla-buzos .img-modelos-1 {
+    .ropa-white .grilla-ropa .img-modelos-1 {
       grid-column: 4/6;
       grid-row: 1/3;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 15px; }
-    .buzos-white .grilla-buzos .articulo {
+    .ropa-white .grilla-ropa .articulo {
       position: relative;
       display: inline-block;
       color: #000000;
       width: 100%;
       height: 100%; }
-      .buzos-white .grilla-buzos .articulo img {
+      .ropa-white .grilla-ropa .articulo img {
         width: 100%;
         height: 100%;
         border-radius: 15px; }
-      .buzos-white .grilla-buzos .articulo .img-populares {
+      .ropa-white .grilla-ropa .articulo .img-populares {
         width: 100%;
         display: block; }
-      .buzos-white .grilla-buzos .articulo .info-arti {
+      .ropa-white .grilla-ropa .articulo .info-arti {
         position: absolute;
         top: 0;
         left: 0;
@@ -451,7 +578,7 @@ footer {
         align-items: center;
         opacity: 0;
         transition: opacity 0.3s ease; }
-      .buzos-white .grilla-buzos .articulo:hover .info-arti {
+      .ropa-white .grilla-ropa .articulo:hover .info-arti {
         opacity: 1; }
 
 .en-stock {
@@ -462,7 +589,7 @@ footer {
     font-weight: 900;
     font-size: 50px;
     letter-spacing: 10px; }
-  .en-stock .grilla-buzos {
+  .en-stock .grilla-ropa {
     gap: 20px;
     margin: 0 auto;
     width: 100%;
@@ -471,27 +598,27 @@ footer {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .en-stock .grilla-buzos .img-modelos-1 {
+    .en-stock .grilla-ropa .img-modelos-1 {
       grid-column: 4/6;
       grid-row: 1/3;
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 15px; }
-    .en-stock .grilla-buzos .articulo {
+    .en-stock .grilla-ropa .articulo {
       position: relative;
       display: inline-block;
       color: #000000;
       width: 100%;
       height: 100%; }
-      .en-stock .grilla-buzos .articulo img {
+      .en-stock .grilla-ropa .articulo img {
         width: 100%;
         height: 100%;
         border-radius: 15px; }
-      .en-stock .grilla-buzos .articulo .img-populares {
+      .en-stock .grilla-ropa .articulo .img-populares {
         width: 100%;
         display: block; }
-      .en-stock .grilla-buzos .articulo .info-arti {
+      .en-stock .grilla-ropa .articulo .info-arti {
         position: absolute;
         top: 0;
         left: 0;
@@ -505,17 +632,8 @@ footer {
         align-items: center;
         opacity: 0;
         transition: opacity 0.3s ease; }
-      .en-stock .grilla-buzos .articulo:hover .info-arti {
+      .en-stock .grilla-ropa .articulo:hover .info-arti {
         opacity: 1; }
-
-.buzos-pestania {
-  text-align: center;
-  background-color: #ffffff; }
-  .buzos-pestania h1 {
-    color: #000000;
-    font-weight: 900;
-    font-size: 210px;
-    letter-spacing: 48px; }
 
 .flex-articulos {
   display: flex;

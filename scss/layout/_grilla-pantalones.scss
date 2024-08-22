@@ -1,56 +1,29 @@
-.section-pantalones {
-    background-color: $primary-color;
+.pantalones-articulos {
+    @include flex(row);
+    gap: 21px;
+
+    justify-content: center;
 
 
 }
 
-.grilla-pantalones {
+.jean {
+
+    background-image: url(../img/jeans-bg.jpg);
 
 
-    gap: 20px;
-    margin: 0 auto;
-    width: 100%;
-    @include grid(repeat(5, 200px), auto);
-    padding: 12px;
-    justify-content: center;
+}
+
+.seccion-pant {
     text-align: center;
+    margin-top: 60px;
+    padding: 30px;
 
-    .articulo {
-        position: relative;
-        display: inline-block;
-        color: $primary-color;
-        width: 100%;
-        height: 100%;
+    h2 {
+        color: $secondary-color;
+        letter-spacing: 20px;
+        font-size: 40px;
+        font-weight: 800;
 
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-        }
-
-        .img-populares {
-            width: 100%;
-            display: block;
-        }
-
-        .info-arti {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(183, 183, 183, 0.7); // Fondo semi-transparente
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        &:hover .info-arti {
-            opacity: 1;
-        }
     }
 }

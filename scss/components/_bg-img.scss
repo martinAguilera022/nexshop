@@ -60,10 +60,22 @@
     background-position: center;
 }
 
-.buzos-pestania {
+.pestania-nombre {
     background-image: url(../img/image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
+    color: $primary-color;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+
+    h1 {
+        font-weight: 900;
+        font-size: 80px;
+        letter-spacing: 10px;
+
+    }
 }
+
