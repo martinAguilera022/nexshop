@@ -1510,13 +1510,6 @@ main {
       .todos-accesorios .grid-accesorios .articulo img {
         border-radius: 15px 15px 0px 0px; }
       .todos-accesorios .grid-accesorios .articulo .info-arti {
-        position: relative;
-        border-radius: 0px 15px;
-        width: 100%;
-        height: 100%;
-        background: rgba(183, 183, 183, 0.7);
-        border-radius: 15px;
-        border-radius: 0px 0px 15PX 15PX;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1526,23 +1519,23 @@ main {
   .ropa-black .grilla-ropa {
     width: 88%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 253px); }
     .ropa-black .grilla-ropa .img-modelos-1 {
       display: none; }
     .ropa-black .grilla-ropa .articulo .info-arti {
-      height: 59PX;
-      margin-top: 116%;
+      height: auto;
+      margin-top: 87%;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
       opacity: 1; }
-    .ropa-black .grilla-ropa .articulo button {
-      display: none; }
   .ropa-white .grilla-ropa {
     width: 88%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 253px); }
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
     .ropa-white .grilla-ropa .articulo .info-arti {
@@ -1556,7 +1549,8 @@ main {
   .en-stock .grilla-ropa {
     width: 88%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 253px); }
     .en-stock .grilla-ropa .img-modelos-1 {
       display: none; }
     .en-stock .grilla-ropa .articulo .info-arti {
