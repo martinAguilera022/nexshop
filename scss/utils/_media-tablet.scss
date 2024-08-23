@@ -317,4 +317,84 @@
         }
 
     }
+
+    .en-stock {
+        .grilla-ropa {
+            gap: 20px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 185px);
+            grid-template-rows: repeat(2, 250px);
+            padding: 12px;
+            justify-content: center;
+
+
+
+            .img-modelos-1 {
+                width: 56%;
+                height: 84%;
+                justify-self: end;
+                margin-left: 441px;
+                object-fit: cover;
+
+                position: absolute;
+            }
+        }
+    }
+
+    .ropa-black {
+        .grilla-ropa {
+            gap: 20px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 185px);
+            grid-template-rows: repeat(2, 250px);
+            padding: 12px;
+            justify-content: center;
+
+
+
+            .img-modelos-1 {
+
+                width: 56%;
+                height: 84%;
+                justify-self: end;
+
+                object-fit: cover;
+
+                position: absolute;
+            }
+        }
+
+
+    }
+
+    .ropa-white {
+
+        .grilla-ropa {
+            gap: 20px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 185px);
+            grid-template-rows: repeat(2, 250px);
+            padding: 12px;
+            justify-content: center;
+
+
+
+            .img-modelos-1 {
+
+
+                width: 56%;
+                height: 84%;
+                justify-self: end;
+                object-fit: cover;
+                margin-left: 441px;
+                position: absolute;
+            }
+        }
+    }
 }

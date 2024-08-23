@@ -36,4 +36,40 @@
             }
         }
     }
+
+    .ropa-black {
+        .grilla-ropa {
+            width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .img-modelos-1 {
+                display: none;
+            }
+        }
+    }
+
+    .ropa-white {
+        .grilla-ropa {
+            width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .img-modelos-1 {
+                display: none;
+            }
+        }
+    }
+
+    .en-stock {
+        .grilla-ropa {
+            width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .img-modelos-1 {
+                display: none;
+            }
+        }
+    }
 }
