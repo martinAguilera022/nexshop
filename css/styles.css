@@ -143,7 +143,7 @@ button {
     border-radius: 5px;
     margin: 3px 31px 19px; }
   .articulo p {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     color: #000000; }
   .articulo .articuloP {
     font-size: 13px; }
@@ -1517,50 +1517,59 @@ main {
         opacity: 1;
         transition: opacity 0.3s ease; }
   .ropa-black .grilla-ropa {
-    width: 88%;
+    width: 363px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 253px); }
     .ropa-black .grilla-ropa .img-modelos-1 {
       display: none; }
     .ropa-black .grilla-ropa .articulo .info-arti {
-      height: auto;
-      margin-top: 87%;
+      height: 81px;
+      margin-top: 108%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       opacity: 1; }
+    .ropa-black .grilla-ropa .articulo button {
+      display: none; }
   .ropa-white .grilla-ropa {
-    width: 88%;
+    width: 363px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 253px); }
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
     .ropa-white .grilla-ropa .articulo .info-arti {
-      height: auto;
-      margin-top: 87%;
+      height: 81px;
+      margin-top: 108%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       opacity: 1; }
+    .ropa-white .grilla-ropa .articulo button {
+      display: none; }
   .en-stock .grilla-ropa {
-    width: 88%;
+    overflow-y: hidden;
+    width: 363px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 253px); }
     .en-stock .grilla-ropa .img-modelos-1 {
       display: none; }
-    .en-stock .grilla-ropa .articulo .info-arti {
-      height: auto;
-      margin-top: 87%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      opacity: 1; } }
+    .en-stock .grilla-ropa .articulo {
+      overflow-y: hidden; }
+      .en-stock .grilla-ropa .articulo .info-arti {
+        height: 81px;
+        margin-top: 108%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1; }
+      .en-stock .grilla-ropa .articulo button {
+        display: none; } }
 
 @media (min-width: 481px) {
   .articulosGrid a .articulo .btonCarrito {

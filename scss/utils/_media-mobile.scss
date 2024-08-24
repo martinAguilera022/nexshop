@@ -402,7 +402,7 @@
                 }
 
                 .info-arti {
-                  
+
 
                     display: flex;
                     flex-direction: column;
@@ -418,7 +418,7 @@
 
     .ropa-black {
         .grilla-ropa {
-            width: 88%;
+            width: 363px;
 
 
             @include grid(repeat(2, 1fr), repeat(3, 253px));
@@ -429,17 +429,19 @@
 
             .articulo {
                 .info-arti {
-                    height: auto;
-                    margin-top: 87%;
+                    height: 81px;
+                    margin-top: 108%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     opacity: 1;
 
-
                 }
 
+                button {
+                    display: none;
+                }
 
             }
         }
@@ -447,7 +449,7 @@
 
     .ropa-white {
         .grilla-ropa {
-            width: 88%;
+            width: 363px;
             @include grid(repeat(2, 1fr), repeat(3, 253px));
 
             .img-modelos-1 {
@@ -456,14 +458,18 @@
 
             .articulo {
                 .info-arti {
-                    height: auto;
-                    margin-top: 87%;
+                    height: 81px;
+                    margin-top: 108%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     opacity: 1;
 
+                }
+
+                button {
+                    display: none;
                 }
             }
         }
@@ -471,7 +477,8 @@
 
     .en-stock {
         .grilla-ropa {
-            width: 88%;
+            overflow-y: hidden;
+            width: 363px;
             @include grid(repeat(2, 1fr), repeat(3, 253px));
 
             .img-modelos-1 {
@@ -479,16 +486,21 @@
             }
 
             .articulo {
+                overflow-y: hidden;
+
                 .info-arti {
-
-                    height: auto;
-                    margin-top: 87%;
-
+                    height: 81px;
+                    margin-top: 108%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     opacity: 1;
+
+                }
+
+                button {
+                    display: none;
                 }
             }
         }
