@@ -1,62 +1,21 @@
-// Menú Lateral
-.menuLateral {
-    background-color: $primary-color;
-    position: fixed;
-    top: 7.0625rem;
-    left: 0;
-    height: 100%;
-    width: 250px; // Ancho fijo para el menú
-    padding: 1rem;
-    text-align: center;
-    color: $secondary-color;
-    box-shadow: 2px 0 1.25rem rgba(0, 0, 0, 0.2); // Sombras más suaves
-    z-index: 100; // Asegura que el menú esté encima del contenido
-
-    h2 {
-        color: $secondary-color;
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-            border-bottom: 1px solid darken($secondary-color, 10%); // Cambiado para visibilidad
-            margin: 0.5rem 0;
-
-            a {
-                color: $secondary-color;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                padding: 0.5rem;
-
-                &:hover {
-                    background-color: lighten($secondary-color, 10%); // Color de fondo al pasar el ratón
-                    border-radius: 5px;
-                }
-
-                .icon {
-                    margin-right: 0.5rem; // Espacio entre el ícono y el texto
-                }
-            }
-        }
-    }
-}
-
 // Perfil
 .perfilVentana {
-    margin-left: 250px; // Deja espacio para el menú lateral
+
     padding: 1rem;
 }
 
 .perfil {
-    background-color: #d4d3d3;
+    background-color: $primary-color;
     border-radius: 2.875rem;
     padding: 2rem; // Ajustado para más espacio
     text-align: center;
     margin: auto;
+    color: $secondary-color;
+
+    button {
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
 
     img {
         width: 20%;

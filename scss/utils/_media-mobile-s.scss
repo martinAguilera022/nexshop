@@ -15,7 +15,7 @@
 
             .articuloEnCarrito {
 
-                @include grid(repeat(8, auto), repeat(1, 20px));
+                @include grid(repeat(8, 1fr), repeat(1, 20px));
 
             }
 
@@ -107,4 +107,7 @@
             }
         }
     }
+
+
+
 }
