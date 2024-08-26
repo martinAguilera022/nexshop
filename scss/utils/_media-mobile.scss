@@ -427,20 +427,7 @@
                 display: none;
             }
 
-            .articulo {
-                .info-arti {
-                    height: 81px;
-                    margin-top: 108%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 1;
 
-                }
-
-
-            }
         }
     }
 
@@ -453,18 +440,7 @@
                 display: none;
             }
 
-            .articulo {
-                .info-arti {
-                    height: auto;
-                    margin-top: 97%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    align-items: center;
-                    opacity: 1;
 
-                }
-            }
         }
     }
 
@@ -478,24 +454,7 @@
                 display: none;
             }
 
-            .articulo {
-                overflow-y: hidden;
 
-                .info-arti {
-                    height: 81px;
-                    margin-top: 108%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 1;
-
-                }
-
-                button {
-                    display: none;
-                }
-            }
         }
     }
 

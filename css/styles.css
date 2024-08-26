@@ -1223,16 +1223,17 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .en-stock .grilla-ropa .articulo .info-arti {
-      height: 94px;
-      margin-top: 156px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 1; }
     .en-stock .grilla-ropa .articulo button {
       display: none; }
+    .en-stock .grilla-ropa .articulo .info-arti {
+      overflow-x: hidden;
+      opacity: 1;
+      background-color: #00000000;
+      justify-content: flex-end;
+      height: 100%; }
+      .en-stock .grilla-ropa .articulo .info-arti p {
+        background-color: #ffffff45;
+        width: 100%; }
     .en-stock .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
@@ -1249,16 +1250,17 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .ropa-black .grilla-ropa .articulo .info-arti {
-      height: 94px;
-      margin-top: 156px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 1; }
     .ropa-black .grilla-ropa .articulo button {
       display: none; }
+    .ropa-black .grilla-ropa .articulo .info-arti {
+      overflow-x: hidden;
+      opacity: 1;
+      background-color: #00000000;
+      justify-content: flex-end;
+      height: 100%; }
+      .ropa-black .grilla-ropa .articulo .info-arti p {
+        background-color: #ffffff45;
+        width: 100%; }
     .ropa-black .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
@@ -1274,16 +1276,17 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
-    .ropa-white .grilla-ropa .articulo .info-arti {
-      height: 94px;
-      margin-top: 156px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 1; }
     .ropa-white .grilla-ropa .articulo button {
       display: none; }
+    .ropa-white .grilla-ropa .articulo .info-arti {
+      overflow-x: hidden;
+      opacity: 1;
+      background-color: #00000000;
+      justify-content: flex-end;
+      height: 100%; }
+      .ropa-white .grilla-ropa .articulo .info-arti p {
+        background-color: #ffffff45;
+        width: 100%; }
     .ropa-white .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
@@ -1309,6 +1312,16 @@ main {
       background-position: top;
       background-size: 179px;
       padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-vans .articulo button {
+        display: none; }
+      .zapatillas-y-marca .zapas-vans .articulo .info-arti {
+        overflow-x: hidden;
+        opacity: 1;
+        background-color: #00000000;
+        justify-content: flex-end; }
+        .zapatillas-y-marca .zapas-vans .articulo .info-arti p {
+          background-color: #00000045;
+          width: 100%; }
     .zapatillas-y-marca .zapas-adidas {
       padding: 90px;
       padding-top: 90px;
@@ -1321,7 +1334,17 @@ main {
       background-repeat: no-repeat;
       background-position: top;
       background-size: 90px;
-      padding-bottom: 40px; } }
+      padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-adidas .articulo button {
+        display: none; }
+      .zapatillas-y-marca .zapas-adidas .articulo .info-arti {
+        overflow-x: hidden;
+        opacity: 1;
+        background-color: #00000000;
+        justify-content: flex-end; }
+        .zapatillas-y-marca .zapas-adidas .articulo .info-arti p {
+          background-color: #00000045;
+          width: 100%; } }
 
 @media (max-width: 681px) {
   .articuloEnCarrito .botonesArticulo div button {
@@ -1342,33 +1365,18 @@ main {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    .ropa-black .grilla-ropa .articulo .info-arti {
-      height: 81px;
-      margin-top: 90px; }
-    .ropa-black .grilla-ropa .articulo button {
-      display: none; }
     .ropa-black .grilla-ropa .img-modelos-1 {
       display: none; }
   .ropa-white .grilla-ropa {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    .ropa-white .grilla-ropa .articulo .info-arti {
-      height: 81px;
-      margin-top: 90px; }
-    .ropa-white .grilla-ropa .articulo button {
-      display: none; }
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
   .en-stock .grilla-ropa {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    .en-stock .grilla-ropa .articulo .info-arti {
-      height: 81px;
-      margin-top: 90px; }
-    .en-stock .grilla-ropa .articulo button {
-      display: none; }
     .en-stock .grilla-ropa .img-modelos-1 {
       display: none; } }
 
@@ -1619,14 +1627,6 @@ main {
     grid-template-rows: repeat(3, 253px); }
     .ropa-black .grilla-ropa .img-modelos-1 {
       display: none; }
-    .ropa-black .grilla-ropa .articulo .info-arti {
-      height: 81px;
-      margin-top: 108%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 1; }
   .ropa-white .grilla-ropa {
     width: 363px;
     display: grid;
@@ -1634,14 +1634,6 @@ main {
     grid-template-rows: repeat(3, 253px); }
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
-    .ropa-white .grilla-ropa .articulo .info-arti {
-      height: auto;
-      margin-top: 97%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      opacity: 1; }
   .en-stock .grilla-ropa {
     overflow-y: hidden;
     width: 363px;
@@ -1650,18 +1642,6 @@ main {
     grid-template-rows: repeat(3, 253px); }
     .en-stock .grilla-ropa .img-modelos-1 {
       display: none; }
-    .en-stock .grilla-ropa .articulo {
-      overflow-y: hidden; }
-      .en-stock .grilla-ropa .articulo .info-arti {
-        height: 81px;
-        margin-top: 108%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        opacity: 1; }
-      .en-stock .grilla-ropa .articulo button {
-        display: none; }
   .slogan-seccion {
     height: 200px; }
     .slogan-seccion h2 {

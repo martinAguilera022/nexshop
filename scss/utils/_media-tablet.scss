@@ -330,21 +330,22 @@
             justify-content: center;
 
             .articulo {
-                .info-arti {
-                    height: 94px;
-                    margin-top: 156px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 1;
-
-                }
-
                 button {
                     display: none;
                 }
 
+                .info-arti {
+                    overflow-x: hidden;
+                    opacity: 1;
+                    background-color: #00000000;
+                    justify-content: flex-end;
+                    height: 100%;
+
+                    p {
+                        background-color: #ffffff45;
+                        width: 100%;
+                    }
+                }
             }
 
             .img-modelos-1 {
@@ -371,21 +372,22 @@
             justify-content: center;
 
             .articulo {
-                .info-arti {
-                    height: 94px;
-                    margin-top: 156px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 1;
-
-                }
-
                 button {
                     display: none;
                 }
 
+                .info-arti {
+                    overflow-x: hidden;
+                    opacity: 1;
+                    background-color: #00000000;
+                    justify-content: flex-end;
+                    height: 100%;
+
+                    p {
+                        background-color: #ffffff45;
+                        width: 100%;
+                    }
+                }
             }
 
 
@@ -417,21 +419,22 @@
             justify-content: center;
 
             .articulo {
-                .info-arti {
-                    height: 94px;
-                    margin-top: 156px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 1;
-
-                }
-
                 button {
                     display: none;
                 }
 
+                .info-arti {
+                    overflow-x: hidden;
+                    opacity: 1;
+                    background-color: #00000000;
+                    justify-content: flex-end;
+                    height: 100%;
+
+                    p {
+                        background-color: #ffffff45;
+                        width: 100%;
+                    }
+                }
             }
 
             .img-modelos-1 {
@@ -464,6 +467,7 @@
         .zapas-vans {
 
 
+
             padding: 100px;
             padding-top: 90px;
             justify-content: center;
@@ -475,6 +479,23 @@
             background-size: 179px;
             padding-bottom: 40px;
 
+            .articulo {
+                button {
+                    display: none;
+                }
+
+                .info-arti {
+                    overflow-x: hidden;
+                    opacity: 1;
+                    background-color: #00000000;
+                    justify-content: flex-end;
+
+                    p {
+                        background-color: #00000045;
+                        width: 100%;
+                    }
+                }
+            }
 
         }
 
@@ -495,6 +516,23 @@
             padding-bottom: 40px;
 
 
+            .articulo {
+                button {
+                    display: none;
+                }
+
+                .info-arti {
+                    overflow-x: hidden;
+                    opacity: 1;
+                    background-color: #00000000;
+                    justify-content: flex-end;
+
+                    p {
+                        background-color: #00000045;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
