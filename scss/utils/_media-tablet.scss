@@ -231,6 +231,10 @@
                     font-size: .6875rem;
                 }
 
+                p {
+                    grid-column: 1 / 6;
+                }
+
                 .usuario {
 
 
@@ -242,10 +246,12 @@
 
 
                     }
+
+
                 }
 
                 .estrellasValoracion {
-
+                    grid-column: 6 / 8;
                     height: 26%;
 
                     p {

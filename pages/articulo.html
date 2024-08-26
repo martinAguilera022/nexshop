@@ -93,7 +93,9 @@
         </div>
         <nav class="cat">
             <ul class="lista-sec">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
 
@@ -101,9 +103,21 @@
         </nav>
         <nav class=" cat collapse" id="navbarContent">
             <ul class="movil-ul">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
+            </ul>
+        </nav>
+
+        <nav class="cat categorias collapse" id="navbarCat">
+            <ul>
+                <li><a href="./remeras.html">Remeras</a></li>
+                <li><a href="./buzos.html">Buzos</a></li>
+                <li><a href="./pantalones.html">Pantalones</a></li>
+                <li><a href="./zapatillas.html">Zapatillas</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
             </ul>
         </nav>
     </header>
@@ -111,9 +125,9 @@
         <div class="todoElArticulo">
 
             <section class="infoArticulo">
-                <img class="articuloImg" src="../img/air-jordan-1.png" alt="">
+                <img class="articuloImg" src="../img/articulos/buzo-blanco-homebody.jpg" alt="Buzo HOMEBODY blanco">
                 <div class="contenidoArt">
-                    <h4>Nike Air Jordan Panda</h4>
+                    <h4>Buzo HOMEBODY blanco</h4>
                     <div class="valoracion">
                         <img src="../img/favorite.png" alt="estrella">
                         <img src="../img/favorite.png" alt="estrella">
@@ -133,29 +147,25 @@
                         <h4>Marca </h4>
 
                         <h4>Modelo </h4>
-                        <h4>Color de la estructura</h4>
-                        <h4>Ancho Total </h4>
-                        <h4>Altura </h4>
+                        <h4>Color</h4>
+                        <h4>Talle </h4>
+
                     </div>
                     <div>
                         <p>Generica</p>
 
-                        <p>Galaxy Proyector night light</p>
+                        <p>Oversize</p>
 
-                        <p>Blanco y Negro</p>
-                        <p>12 cm</p>
-                        <p>24 cm</p>
+                        <p>Blanco</p>
+                        <p>L</p>
+
                     </div>
                 </div>
 
             </section>
             <section class="descripcion">
                 <h2>Descripcion</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi odit illum facere
-                    distinctio,
-                    esse sunt ipsa quas, architecto quasi quo consequuntur reiciendis accusantium? Hic eos
-                    doloremque
-                    harum at assumenda!</p>
+                <p>Buzo Blanco Oversize con diseño minimalista con estampa "HOMEBODY" en letras negras</p>
 
             </section>
             <button class="btonAzul verMenos">Ver Menos</button>
@@ -167,62 +177,84 @@
             <div class="flex-articulos">
                 <button class="flechas"><img src="../img/left-arrow(1).png" alt="" width=20px></button>
                 <div class="articulosPopulares articulos">
-
-
-
-
                     <a href="articulo.html">
-                        <div class="articulosInteresantes">
+                        <div class="articulo art1">
 
-                            <img src="../img/air-jordan-1.png" alt="Imagen 1">
-                            <div class="">
-                                <p>Nike Air Jordan Gris</p>
-                                <p class="">$150.000,00</p>
+                            <img class="img-populares" src="../img/articulos/buzo-marron.jpg" alt="Buzo marron liso">
+                            <div class="info-arti">
+                                <p>Buzo Liso</p>
+                                <p>$24.999,00</p>
+                                <button>Añadir al carrito</button>
                             </div>
 
                         </div>
                     </a>
 
                     <a href="articulo.html">
-                        <div class="articulosInteresantes">
+                        <div class="articulo art1">
 
-                            <img src="../img/air-jordan-1.png" alt="Imagen 1">
-                            <div class="">
-                                <p>Nike Air Jordan Gris</p>
-                                <p class="">$150.000,00</p>
+                            <img class="img-populares" src="../img/articulos/buzo-marron-mariposas-love-mangas.jpg">
+                            <div class="info-arti">
+                                <p>Buzo Mariposas marron</p>
+                                <p>$30.999,00</p>
+                                <button>Añadir al carrito</button>
                             </div>
 
                         </div>
                     </a>
+                    <a href="articulo.html">
+                        <div class="articulo art1">
+
+                            <img class="img-populares" src="../img/articulos/buzo-black-mariposa.jpg"
+                                alt="Buzo Black Mariposa">
+                            <div class="info-arti">
+                                <p>Buzo Mariposa Negro </p>
+                                <p>$40.999,00</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="articulo.html">
+                        <div class="articulo art1">
+
+                            <img class="img-populares" src="../img/articulos/buzo-LA-black.jpg" alt="Buzo Negro L.A">
+                            <div class="info-arti">
+                                <p>Buzo Negro LA California </p>
+                                <p>$44.999,00</p>
+                                <button>Añadir al carrito</button>
+                            </div>
+
+                        </div>
+                    </a>
+
 
                     <a href="articulo.html">
-                        <div class="articulosInteresantes">
+                        <div class="articulo art1">
 
-                            <img src="../img/air-jordan-1.png" alt="Imagen 1">
-                            <div class="">
-                                <p>Nike Air Jordan Gris</p>
-                                <p class="">$150.000,00</p>
+                            <img class="img-populares" src="../img/articulos/buzo-brookling-white.jpg"
+                                alt="Buzo Blanco Brookling">
+                            <div class="info-arti">
+                                <p>Buzo Brookling blanco </p>
+                                <p>$34.999,00</p>
+                                <button>Añadir al carrito</button>
                             </div>
 
                         </div>
                     </a>
-
                     <a href="articulo.html">
-                        <div class="articulosInteresantes">
+                        <div class="articulo art1">
 
-                            <img src="../img/air-jordan-1.png" alt="Imagen 1">
-                            <div class="">
-                                <p>Nike Air Jordan Gris</p>
-                                <p class="">$150.000,00</p>
+                            <img class="img-populares" src="../img/articulos/buzo-blanco-homebody.jpg"
+                                alt="Buzo HOMEBODY">
+                            <div class="info-arti">
+                                <p>Buzo HOMEBODY</p>
+                                <p>$34.999,00</p>
+                                <button>Añadir al carrito</button>
                             </div>
 
                         </div>
                     </a>
-
-
-
-
-
 
                 </div>
                 <button class="flechas"><img src="../img/right-arrow.png" alt="" width=20px></button>
@@ -253,11 +285,8 @@
                         <img src="../img/people_14024731.png" alt="">
                         <h5>Usuario</h5>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eaque totam,
-                        fuga,
-                        esse, ducimus quo quia qui repellendus a similique sequi sit. Est quasi atque unde
-                        libero
-                        delectus. Provident, delectus!</p>
+                    <p>Este buzo oversize es justo lo que buscaba. Es súper cómodo y tiene el estilo relajado que me
+                        encanta. Además, el corte es ideal, ni muy grande ni muy pequeño. ¡Lo uso todo el tiempo!</p>
                     <div class="estrellasValoracion">
 
                         <p>5 </p>
@@ -269,11 +298,8 @@
                         <img src="../img/people_14024731.png" alt="">
                         <h5>Usuario</h5>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eaque totam,
-                        fuga,
-                        esse, ducimus quo quia qui repellendus a similique sequi sit. Est quasi atque unde
-                        libero
-                        delectus. Provident, delectus!</p>
+                    <p>El buzo es súper cómodo y tiene un estilo genial. Me encanta cómo queda, perfecto para un look
+                        relajado.</p>
                     <div class="estrellasValoracion">
 
                         <p>5 </p>
@@ -286,7 +312,37 @@
 
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h3 class="footerTitle">Información</h3>
+                <ul class="footerList">
+                    <li><a href="#" class="footerLink">Sobre nosotros</a></li>
+                    <li><a href="#" class="footerLink">Trabaja con nosotros</a></li>
+                    <li><a href="#" class="footerLink">Términos y condiciones</a></li>
+                    <li><a href="#" class="footerLink">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Ayuda</h3>
+                <ul class="footerList">
+                    <li><a href="#" class="footerLink">Centro de ayuda</a></li>
+                    <li><a href="#" class="footerLink">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Síguenos</h3>
+                <div class="socialLinks">
+                    <a href="#" class="footerLink">Facebook</a>
+                    <a href="#" class="footerLink">Twitter</a>
+                    <a href="#" class="footerLink">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>© 2024 NexShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

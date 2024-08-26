@@ -89,7 +89,9 @@
         </div>
         <nav class="cat">
             <ul class="lista-sec">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
 
@@ -97,9 +99,21 @@
         </nav>
         <nav class=" cat collapse" id="navbarContent">
             <ul class="movil-ul">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
+            </ul>
+        </nav>
+
+        <nav class="cat categorias collapse" id="navbarCat">
+            <ul>
+                <li><a href="./remeras.html">Remeras</a></li>
+                <li><a href="#">Buzos</a></li>
+                <li><a href="./pantalones.html">Pantalones</a></li>
+                <li><a href="./zapatillas.html">Zapatillas</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
             </ul>
         </nav>
     </header>
@@ -109,7 +123,7 @@
         </section>
         <section class="en-stock">
 
-           
+
             <div class="grilla-ropa">
                 <img class="img-modelos-1" src="../img/buzos-modelos-colors.jpg" alt="Modelos de buzos">
 
@@ -361,7 +375,37 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h3 class="footerTitle">Información</h3>
+                <ul class="footerList">
+                    <li><a href="#" class="footerLink">Sobre nosotros</a></li>
+                    <li><a href="#" class="footerLink">Trabaja con nosotros</a></li>
+                    <li><a href="#" class="footerLink">Términos y condiciones</a></li>
+                    <li><a href="#" class="footerLink">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Ayuda</h3>
+                <ul class="footerList">
+                    <li><a href="#" class="footerLink">Centro de ayuda</a></li>
+                    <li><a href="#" class="footerLink">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Síguenos</h3>
+                <div class="socialLinks">
+                    <a href="#" class="footerLink">Facebook</a>
+                    <a href="#" class="footerLink">Twitter</a>
+                    <a href="#" class="footerLink">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>© 2024 NexShop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

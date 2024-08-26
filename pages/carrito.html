@@ -90,7 +90,9 @@
         </div>
         <nav class="cat">
             <ul class="lista-sec">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
 
@@ -98,15 +100,59 @@
         </nav>
         <nav class=" cat collapse" id="navbarContent">
             <ul class="movil-ul">
-                <li class="Categoria"><a href="../index.html#categorias">Categorias</a></li>
+                <li class="Categoria" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCat"
+                    aria-controls="navbarCat" aria-expanded="false" aria-label="Toggle navigation">Categorias</li>
+                </li>
                 <li class="Categoria"><a href="../index.html#ofertas">Ofertas</a></li>
                 <li class="Categoria"><a href="./venta.html">Venta</a></li>
+            </ul>
+        </nav>
+
+        <nav class="cat categorias collapse" id="navbarCat">
+            <ul>
+                <li><a href="./remeras.html">Remeras</a></li>
+                <li><a href="./buzos.html">Buzos</a></li>
+                <li><a href="./pantalones.html">Pantalones</a></li>
+                <li><a href="./zapatillas.html">Zapatillas</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="carrito">
             <div class="todoElCarrito">
+                <div class="articuloEnCarrito ">
+                    <img class="imgComprado" src="../img/articulos/buzo-black-mariposa.jpg" alt="Buzo Negro Mariposa">
+
+                    <p class="tituloArticulo">Buzo Negro Mariposa
+
+                    <div class="valoracion">
+                        <img class="valoracion" src="../img/favorite.png" alt="estrella">
+                        <img class="valoracion" src="../img/favorite.png" alt="estrella">
+                        <img class="valoracion" src="../img/favorite.png" alt="estrella">
+                        <img class="valoracion" src="../img/favorite.png" alt="estrella">
+                        <img class="valoracion" src="../img/favorite.png" alt="estrella">
+                    </div>
+                    <p class="precioArt">$30.999</p>
+                    <p class="cuotas">6 cuotas de $24.999</p>
+
+
+                    <div class="botonesArticulo">
+                        <button class="btonAzul" id="comprar">Comprar ahora</button>
+                        <button class="eliminar">Eliminar del carrito</button>
+                        <div>
+                            <button class="masMenos" id="mas">+</button>
+                            <p>1</p>
+                            <button class="masMenos" id="menos">-</button>
+                        </div>
+
+                    </div>
+                    <div class="masMenosMovil">
+                        <button class="masMenos" id="mas">+</button>
+                        <p id="cantidad">1</p>
+                        <button class="masMenos" id="menos">-</button>
+                    </div>
+                </div>
                 <div class="articuloEnCarrito ">
                     <img class="imgComprado" src="../img/articulos/adidas-campus-verdes.jpg" alt="adidas-campus-verdes">
 
@@ -126,7 +172,7 @@
                     <div class="botonesArticulo">
                         <button class="btonAzul" id="comprar">Comprar ahora</button>
                         <button class="eliminar">Eliminar del carrito</button>
-                        <div >
+                        <div>
                             <button class="masMenos" id="mas">+</button>
                             <p>1</p>
                             <button class="masMenos" id="menos">-</button>
@@ -138,7 +184,8 @@
                         <p id="cantidad">1</p>
                         <button class="masMenos" id="menos">-</button>
                     </div>
-                </div><div class="articuloEnCarrito ">
+                </div>
+                <div class="articuloEnCarrito ">
                     <img class="imgComprado" src="../img/articulos/adidas-super-star.jpg" alt="adidas-super-star">
 
                     <p class="tituloArticulo">Adidas Super Star
@@ -158,7 +205,7 @@
                     <div class="botonesArticulo">
                         <button class="btonAzul" id="comprar">Comprar ahora</button>
                         <button class="eliminar">Eliminar del carrito</button>
-                        <div >
+                        <div>
                             <button class="masMenos" id="mas">+</button>
                             <p>1</p>
                             <button class="masMenos" id="menos">-</button>
@@ -170,7 +217,8 @@
                         <p id="cantidad">1</p>
                         <button class="masMenos" id="menos">-</button>
                     </div>
-                </div><div class="articuloEnCarrito ">
+                </div>
+                <div class="articuloEnCarrito ">
                     <img class="imgComprado" src="../img/articulos/vans-gris.jpg" alt="Vans Gris">
 
                     <p class="tituloArticulo">Vans Gris
@@ -190,7 +238,7 @@
                     <div class="botonesArticulo">
                         <button class="btonAzul" id="comprar">Comprar ahora</button>
                         <button class="eliminar">Eliminar del carrito</button>
-                        <div >
+                        <div>
                             <button class="masMenos" id="mas">+</button>
                             <p>1</p>
                             <button class="masMenos" id="menos">-</button>

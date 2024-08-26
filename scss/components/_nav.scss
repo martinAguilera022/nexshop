@@ -113,8 +113,10 @@ header {
     }
 
     .movil-ul {
-        @include flex(column);
+        @include flex(row);
         justify-content: center;
+        background-color: $primary-color;
+
     }
 
     .nav-item.dropdown .dropdown-toggle::after {
