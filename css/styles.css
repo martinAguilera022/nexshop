@@ -322,7 +322,7 @@ footer {
     justify-content: center;
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 180px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 140px); }
     .zapatillas-y-marca .zapas-vans .zapatilla-vans {
       grid-column: 1/3;
@@ -364,7 +364,7 @@ footer {
     justify-content: center;
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 180px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 140px); }
     .zapatillas-y-marca .zapas-adidas .zapatilla-adidas {
       grid-column: 1/3;
@@ -403,6 +403,26 @@ footer {
 
 .vans {
   background-color: black; }
+
+.slogan-seccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  height: 200px;
+  overflow-x: hidden; }
+  .slogan-seccion h2 {
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 40px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    position: absolute;
+    padding: 20px; }
+  .slogan-seccion img {
+    width: auto;
+    object-fit: contain; }
 
 .todos-accesorios {
   display: flex;
@@ -1203,6 +1223,16 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
+    .en-stock .grilla-ropa .articulo .info-arti {
+      height: 94px;
+      margin-top: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1; }
+    .en-stock .grilla-ropa .articulo button {
+      display: none; }
     .en-stock .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
@@ -1219,6 +1249,16 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
+    .ropa-black .grilla-ropa .articulo .info-arti {
+      height: 94px;
+      margin-top: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1; }
+    .ropa-black .grilla-ropa .articulo button {
+      display: none; }
     .ropa-black .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
@@ -1234,13 +1274,54 @@ main {
     grid-template-rows: repeat(2, 250px);
     padding: 12px;
     justify-content: center; }
+    .ropa-white .grilla-ropa .articulo .info-arti {
+      height: 94px;
+      margin-top: 156px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1; }
+    .ropa-white .grilla-ropa .articulo button {
+      display: none; }
     .ropa-white .grilla-ropa .img-modelos-1 {
       width: 56%;
       height: 84%;
       justify-self: end;
       object-fit: cover;
       margin-left: 441px;
-      position: absolute; } }
+      position: absolute; }
+  .zapatillas-y-marca {
+    justify-content: center;
+    align-items: center; }
+    .zapatillas-y-marca .marca {
+      display: none; }
+    .zapatillas-y-marca .zapas-vans {
+      padding: 100px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      background-image: url(../img/Vans-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 179px;
+      padding-bottom: 40px; }
+    .zapatillas-y-marca .zapas-adidas {
+      padding: 90px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      background-image: url(../../img/adidas-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 90px;
+      padding-bottom: 40px; } }
 
 @media (max-width: 681px) {
   .articuloEnCarrito .botonesArticulo div button {
@@ -1261,18 +1342,33 @@ main {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+    .ropa-black .grilla-ropa .articulo .info-arti {
+      height: 81px;
+      margin-top: 90px; }
+    .ropa-black .grilla-ropa .articulo button {
+      display: none; }
     .ropa-black .grilla-ropa .img-modelos-1 {
       display: none; }
   .ropa-white .grilla-ropa {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+    .ropa-white .grilla-ropa .articulo .info-arti {
+      height: 81px;
+      margin-top: 90px; }
+    .ropa-white .grilla-ropa .articulo button {
+      display: none; }
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
   .en-stock .grilla-ropa {
     width: 88%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+    .en-stock .grilla-ropa .articulo .info-arti {
+      height: 81px;
+      margin-top: 90px; }
+    .en-stock .grilla-ropa .articulo button {
+      display: none; }
     .en-stock .grilla-ropa .img-modelos-1 {
       display: none; } }
 
@@ -1531,8 +1627,6 @@ main {
       justify-content: center;
       align-items: center;
       opacity: 1; }
-    .ropa-black .grilla-ropa .articulo button {
-      display: none; }
   .ropa-white .grilla-ropa {
     width: 363px;
     display: grid;
@@ -1541,15 +1635,13 @@ main {
     .ropa-white .grilla-ropa .img-modelos-1 {
       display: none; }
     .ropa-white .grilla-ropa .articulo .info-arti {
-      height: 81px;
-      margin-top: 108%;
+      height: auto;
+      margin-top: 97%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       opacity: 1; }
-    .ropa-white .grilla-ropa .articulo button {
-      display: none; }
   .en-stock .grilla-ropa {
     overflow-y: hidden;
     width: 363px;
@@ -1569,7 +1661,51 @@ main {
         align-items: center;
         opacity: 1; }
       .en-stock .grilla-ropa .articulo button {
-        display: none; } }
+        display: none; }
+  .slogan-seccion {
+    height: 200px; }
+    .slogan-seccion h2 {
+      margin-top: 2%;
+      font-weight: 700;
+      font-size: 30px;
+      padding: 20px; }
+  .zapatillas-y-marca {
+    justify-content: center;
+    align-items: center; }
+    .zapatillas-y-marca .marca {
+      display: none; }
+    .zapatillas-y-marca .zapas-vans {
+      padding: 64px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 150px);
+      background-image: url(../img/Vans-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 179px;
+      padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-vans .zapatilla-adidas {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; }
+    .zapatillas-y-marca .zapas-adidas {
+      padding: 64px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 150px);
+      background-image: url(../../img/adidas-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 90px;
+      padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-adidas .zapatilla-adidas {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; } }
 
 @media (min-width: 481px) {
   .articulosGrid a .articulo .btonCarrito {
@@ -1606,4 +1742,41 @@ main {
   .pestania-nombre h1 {
     font-weight: 900;
     font-size: 30px;
-    letter-spacing: 10px; } }
+    letter-spacing: 10px; }
+  .zapatillas-y-marca {
+    justify-content: center;
+    align-items: center; }
+    .zapatillas-y-marca .marca {
+      display: none; }
+    .zapatillas-y-marca .zapas-vans {
+      padding: 17px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 150px);
+      background-image: url(../img/Vans-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 150px;
+      padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-vans .zapatilla-adidas {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; }
+    .zapatillas-y-marca .zapas-adidas {
+      padding: 17px;
+      padding-top: 90px;
+      justify-content: center;
+      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 150px);
+      background-image: url(../../img/adidas-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 70px;
+      padding-bottom: 40px; }
+      .zapatillas-y-marca .zapas-adidas .zapatilla-adidas {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; } }

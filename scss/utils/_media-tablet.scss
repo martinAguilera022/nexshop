@@ -329,7 +329,23 @@
             padding: 12px;
             justify-content: center;
 
+            .articulo {
+                .info-arti {
+                    height: 94px;
+                    margin-top: 156px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 1;
 
+                }
+
+                button {
+                    display: none;
+                }
+
+            }
 
             .img-modelos-1 {
                 width: 56%;
@@ -354,6 +370,23 @@
             padding: 12px;
             justify-content: center;
 
+            .articulo {
+                .info-arti {
+                    height: 94px;
+                    margin-top: 156px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 1;
+
+                }
+
+                button {
+                    display: none;
+                }
+
+            }
 
 
             .img-modelos-1 {
@@ -383,7 +416,23 @@
             padding: 12px;
             justify-content: center;
 
+            .articulo {
+                .info-arti {
+                    height: 94px;
+                    margin-top: 156px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 1;
 
+                }
+
+                button {
+                    display: none;
+                }
+
+            }
 
             .img-modelos-1 {
 
@@ -395,6 +444,57 @@
                 margin-left: 441px;
                 position: absolute;
             }
+        }
+    }
+
+    .zapatillas-y-marca {
+
+        justify-content: center;
+        align-items: center;
+
+
+        .marca {
+            display: none;
+
+        }
+
+
+
+
+        .zapas-vans {
+
+
+            padding: 100px;
+            padding-top: 90px;
+            justify-content: center;
+            gap: 20px;
+            @include grid(repeat(3, 1fr), repeat(4, 1fr));
+            background-image: url(../img/Vans-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 179px;
+            padding-bottom: 40px;
+
+
+        }
+
+        .zapas-adidas {
+
+
+
+            padding: 90px;
+            padding-top: 90px;
+            justify-content: center;
+            gap: 20px;
+            @include grid(repeat(3, 1fr), repeat(4, 1fr));
+
+            background-image: url(../../img/adidas-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 90px;
+            padding-bottom: 40px;
+
+
         }
     }
 }

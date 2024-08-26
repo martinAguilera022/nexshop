@@ -439,9 +439,6 @@
 
                 }
 
-                button {
-                    display: none;
-                }
 
             }
         }
@@ -458,18 +455,14 @@
 
             .articulo {
                 .info-arti {
-                    height: 81px;
-                    margin-top: 108%;
+                    height: auto;
+                    margin-top: 97%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: flex-end;
                     align-items: center;
                     opacity: 1;
 
-                }
-
-                button {
-                    display: none;
                 }
             }
         }
@@ -502,6 +495,81 @@
                 button {
                     display: none;
                 }
+            }
+        }
+    }
+
+    .slogan-seccion {
+
+        height: 200px;
+
+
+
+        h2 {
+            margin-top: 2%;
+            font-weight: 700;
+            font-size: 30px;
+
+            padding: 20px;
+        }
+
+
+    }
+
+    .zapatillas-y-marca {
+
+        justify-content: center;
+        align-items: center;
+
+
+        .marca {
+            display: none;
+
+        }
+
+
+
+
+        .zapas-vans {
+
+
+            padding: 64px;
+            padding-top: 90px;
+            justify-content: center;
+            gap: 20px;
+            @include grid(repeat(2, 1fr), repeat(1, 150px));
+            background-image: url(../img/Vans-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 179px;
+            padding-bottom: 40px;
+
+            .zapatilla-adidas {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+            }
+
+        }
+
+        .zapas-adidas {
+
+
+
+            padding: 64px;
+            padding-top: 90px;
+            justify-content: center;
+            gap: 20px;
+            @include grid(repeat(2, 1fr), repeat(1, 150px));
+
+            background-image: url(../../img/adidas-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 90px;
+            padding-bottom: 40px;
+
+            .zapatilla-adidas {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
             }
         }
     }

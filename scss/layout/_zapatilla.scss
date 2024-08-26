@@ -16,7 +16,7 @@
         padding: 20px;
         justify-content: center;
         gap: 20px;
-        @include grid(repeat(4, 180px), repeat(3, 140px));
+        @include grid(repeat(4, 1fr), repeat(3, 140px));
 
 
 
@@ -78,7 +78,7 @@
         padding: 20px;
         justify-content: center;
         gap: 20px;
-        @include grid(repeat(4, 180px), repeat(3, 140px));
+        @include grid(repeat(4, 1fr), repeat(3, 140px));
 
         .zapatilla-adidas {
             grid-column: 1/3;
@@ -134,4 +134,31 @@
 
 .vans {
     background-color: black;
+}
+
+.slogan-seccion {
+    @include flex(row);
+    justify-content: center;
+    justify-content: space-between;
+    height: 200px;
+    overflow-x: hidden;
+
+
+    h2 {
+        margin-top: 2%;
+        font-weight: 700;
+        font-size: 40px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        position: absolute;
+        padding: 20px;
+    }
+
+    img {
+        width: auto;
+
+        object-fit: contain;
+
+    }
 }
