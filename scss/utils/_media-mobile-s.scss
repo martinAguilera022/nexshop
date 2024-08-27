@@ -17,6 +17,12 @@
 
                 @include grid(repeat(8, 1fr), repeat(1, 20px));
 
+                .precioArt {
+                    grid-row: 1 / 2;
+                    grid-column: 6 / 9;
+                    font-size: 20px;
+                    justify-self: flex-end;
+                }
             }
 
         }
