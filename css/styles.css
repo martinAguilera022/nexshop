@@ -973,6 +973,26 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .popular .articulos .articulosInteresantes {
+      background-color: #ffffff;
+      color: #000;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 1s; }
+      .popular .articulos .articulosInteresantes:hover {
+        transform: scale(1.2); }
+      .popular .articulos .articulosInteresantes p {
+        margin: 5px 0; }
+      .popular .articulos .articulosInteresantes img {
+        height: 8.1875rem;
+        border-bottom: 1px solid #ddd;
+        object-fit: contain; }
 
 #comentariosSection {
   margin: 1.25rem;
@@ -1696,13 +1716,13 @@ main {
       height: 256px;
       width: 100%; } }
 
-@media (max-width: 480px) and (min-width: 481px) {
+@media (min-width: 481px) {
   .articulosGrid a .articulo .btonCarrito {
     display: none; }
   .totalCarritoMovil {
     display: none; } }
 
-@media (max-width: 480px) and (min-width: 480px) {
+@media (min-width: 480px) {
   .movil-ul {
     display: none; } }
 

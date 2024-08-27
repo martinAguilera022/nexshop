@@ -560,30 +560,30 @@
         }
 
     }
+}
 
-    @media (min-width:481px) {
+@media (min-width:481px) {
 
-        .articulosGrid {
-            a {
-                .articulo {
-                    .btonCarrito {
-                        display: none;
-                    }
+    .articulosGrid {
+        a {
+            .articulo {
+                .btonCarrito {
+                    display: none;
                 }
             }
         }
-
-        .totalCarritoMovil {
-            display: none;
-        }
-
-
     }
 
-    @media (min-width:480px) {
-        .movil-ul {
-            display: none;
-        }
-
+    .totalCarritoMovil {
+        display: none;
     }
+
+
+}
+
+@media (min-width:480px) {
+    .movil-ul {
+        display: none;
+    }
+
 }
