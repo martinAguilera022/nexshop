@@ -209,7 +209,6 @@ button {
 footer {
   color: #ffffff;
   background-color: #000000;
-  margin-top: 5%;
   padding: 20px; }
   footer .footerContainer {
     width: 100%;
@@ -742,7 +741,8 @@ footer {
 .ofertas {
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5%; }
   .ofertas h3 {
     text-align: center;
     font-size: 2.5rem; }
