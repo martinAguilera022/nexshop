@@ -1629,15 +1629,14 @@ a {
         grid-row: 1/2;
         grid-column: 7/8; }
       .carrito .todoElCarrito .articuloEnCarrito .tituloArticulo {
-        grid-column: 3 / 8;
-        grid-row: 1/2;
-        font-size: 12px;
-        margin-left: 1; }
+        grid-column: 3 / 7;
+        grid-row: 1/1;
+        font-size: 10px; }
       .carrito .todoElCarrito .articuloEnCarrito .precioArt {
         font-size: 20px;
         align-self: center; }
       .carrito .todoElCarrito .articuloEnCarrito .precioTotal {
-        grid-row: 2 / 2;
+        grid-row: 2 / 4;
         grid-column: 3 / 6;
         text-align: start; }
       .carrito .todoElCarrito .articuloEnCarrito .precioUnidad {
