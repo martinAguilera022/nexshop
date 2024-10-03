@@ -43,3 +43,12 @@
 @import "./utils/media-tablet-s";
 @import "./utils/media-mobile";
 @import "./utils/media-mobile-s";
+
+.carrito-vacio{
+    text-align: center;
+    align-self: center;
+}
+
+.disabled{
+    display: none;
+}

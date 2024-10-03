@@ -10,13 +10,11 @@
     grid-column: 2/3;
     gap: 1.25rem;
     margin-bottom: 5px;
-
-    .precioArt {
-
-        font-weight: 300;
-
-        font-size: 3.125rem;
+    p{
+        font-size: 15px;
     }
+
+ 
 
     .todosLosMovimientos {
         @include flex(row);
